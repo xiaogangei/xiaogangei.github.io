@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -21,9 +19,13 @@
 
   <!-- 页面元数据 -->
   
-  <title>标签：历史 - XiaoGang Blog</title>
+  <title>zsh oh-my-zsh 插件推荐 - XiaoGang Blog</title>
+  
+    <meta name="keywords" content="插件">
   
 
+  
+    <meta name="description" content="在这里整理了一些Mac上ZSH中的常用的插件，使用这些插件可大大提升我们的工作效率。">
   
 
   <!-- feed -->
@@ -307,7 +309,7 @@
     <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/009.jpg"></div>
           
@@ -375,268 +377,354 @@
       <div class='body-wrapper' id="pjax-container">
         
 
-
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
+
+
+  
+  <div class="article-meta" id="top">
     
-      
-  <section class="post-list">
     
-      
+    
+      <h1 class="title">
+        zsh oh-my-zsh 插件推荐
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/about/" rel="nofollow">
+    <img no-lazy src="">
+    <p>XiaoGang</p>
+  </a>
+</div>
+
           
         
           
-        
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/Mac/">Mac</a>
+    </a>
+  </div>
+
+
           
         
           
-        
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2020年12月26日</p>
+  </a>
+</div>
+
           
         
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
       
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/12/12/%E5%8F%B2%E8%AE%B0-%E5%88%97%E4%BC%A0/">
-        史记-列传
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        卷六十一　伯夷列传第一方孝孺：“伯夷苟知父志欲立齐，当效太伯顺父之志，隐然退避于治命之日，不当显然辞让于乱命之余也。叔齐亦不立而逃之，幸有仲子以托国，不然其如社稷何？斯皆过乎中者也！故孔子但曰‘古之贤人’，而至德之称独在太伯，厥旨深矣。”夫学者载籍极博，犹考信于六艺。《诗》《书》虽缺，然虞夏之文可知也。尧将逊位，让于虞舜，舜禹之间，岳牧咸荐，乃试之于位，典职【典职：掌管政事。】数十年，功用既...
-      
-    
+      <div id="lc-pv" data-title="zsh oh-my-zsh 插件推荐" data-path="/2020/12/26/zsh-oh-my-zsh-%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-12-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%94%B5%E5%AD%90%E4%B9%A6/">电子书</a>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  <p>在这里整理了一些Mac上ZSH中的常用的插件，使用这些插件可大大提升我们的工作效率。</p>
+<a id="more"></a>
+<p>原文链接：<a target="_blank" rel="noopener" href="https://hufangyun.com/2017/zsh-plugin/"></a></p>
+<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><div class="note"><p>默认已开启</p></div>
+
+<h4 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h4><p>可以使用各种 git 命令缩写。😋</p>
+<p>比如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add --all &#x3D;&#x3D;&#x3D;&gt; gaa</span><br><span class="line"></span><br><span class="line">git commit -m &#x3D;&#x3D;&#x3D;&gt; gcmsg</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s3.ax1x.com/2020/12/26/rfdWwR.png" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfdWwR.png" srcset="data:image/png;base64,666" alt="rfdWwR.png"></p>
+<p>查看所有 git 命令缩写</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~&#x2F;.oh-my-zsh&#x2F;plugins&#x2F;git&#x2F;git.plugin.zsh</span><br></pre></td></tr></table></figure>
+<p>或者筛选对应的命令</p>
+<p>如和 config 有关的命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias | grep config</span><br></pre></td></tr></table></figure>
+<h3 id="autojump"><a href="#autojump" class="headerlink" title="autojump"></a>autojump</h3><p><a target="_blank" rel="noopener" href="https://github.com/wting/autojump">autojump 官网</a></p>
+<h4 id="作用-1"><a href="#作用-1" class="headerlink" title="作用"></a>作用</h4><div class="note"><p>目录间快速跳转,不用再一直 cd 了 😁</p></div>
+
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><p>使用 autojump 的缩写 j</p>
+<p>cd 命令进入 ~/user/github/Youthink 文件夹，下一次再想进入 Yourhink 文件夹的时候,直接 j youthink 即可<br>或者只输入 youthink 的一部分 youth 都行<br>删除无效路径</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">j --purge 无效路径</span><br></pre></td></tr></table></figure>
+<p>打开 muisc 文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jo music</span><br></pre></td></tr></table></figure>
+<p>多个参数一起使用 打开 /home/user/work/inbox</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">j w in</span><br></pre></td></tr></table></figure>
+<p>和 Z 不同 autojump 不是 zsh 内置的插件，需要额外安装。<br>首先安装 autojump，如果你用 Mac，可以使用 brew 安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install autojump</span><br></pre></td></tr></table></figure>
+<p>如果是 Linux，可以使用 git 安装，比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git:&#x2F;&#x2F;github.com&#x2F;joelthelion&#x2F;autojump.git</span><br></pre></td></tr></table></figure>
+<p>进入目录，执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;install.py</span><br></pre></td></tr></table></figure>
+<p>最后把以下代码加入 .zshrc：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[[ -s ~&#x2F;.autojump&#x2F;etc&#x2F;profile.d&#x2F;autojump.sh ]] &amp;&amp; . ~&#x2F;.autojump&#x2F;etc&#x2F;profile.d&#x2F;autojump.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="Z"><a href="#Z" class="headerlink" title="Z"></a>Z</h3><p>如果你不想额外安装 autojump<br>可以使用 oh-my-zsh 内置的类似组件 Z<br>和 autojump 除了名字不一样，基本雷同。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">z -x 无效路径</span><br></pre></td></tr></table></figure>
+<p>效果图<br><img src="https://s3.ax1x.com/2020/12/26/rfdfT1.jpg" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfdfT1.jpg" srcset="data:image/png;base64,666" alt="rfdfT1.jpg"></p>
+<h3 id="zsh-syntax-highlighting"><a href="#zsh-syntax-highlighting" class="headerlink" title="zsh-syntax-highlighting"></a>zsh-syntax-highlighting</h3><p><a target="_blank" rel="noopener" href="https://github.com/zsh-users/zsh-syntax-highlighting">官网</a></p>
+<p>作用 平常用的ls、cd 等命令输入正确会绿色高亮显示，输入错误会显示其他的颜色。</p>
+<img src="https://s3.ax1x.com/2020/12/26/rfwk0s.jpg" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfwk0s.jpg" srcset="data:image/png;base64,666" alt="rfwk0s.jpg" border="0">
+
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>克隆项目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-syntax-highlighting.git $&#123;ZSH_CUSTOM:-~&#x2F;.oh-my-zsh&#x2F;custom&#125;&#x2F;plugins&#x2F;zsh-syntax-highlighting</span><br></pre></td></tr></table></figure>
+<h4 id="在-zshrc-中配置"><a href="#在-zshrc-中配置" class="headerlink" title="在 ~/.zshrc 中配置"></a>在 ~/.zshrc 中配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins&#x3D;(其他的插件 zsh-syntax-highlighting)</span><br></pre></td></tr></table></figure>
+<p>使配置生效</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~&#x2F;.zshrc</span><br></pre></td></tr></table></figure>
+<h3 id="zsh-autosuggestions"><a href="#zsh-autosuggestions" class="headerlink" title="zsh-autosuggestions"></a>zsh-autosuggestions</h3><p><a target="_blank" rel="noopener" href="https://github.com/zsh-users/zsh-autosuggestions">官网</a></p>
+<h4 id="作用-2"><a href="#作用-2" class="headerlink" title="作用"></a>作用</h4><p>效率神器 👍</p>
+<p>如图输入命令时，会给出建议的命令（灰色部分）按键盘 → 补全</p>
+<img src="https://s3.ax1x.com/2020/12/26/rfwFmj.png" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfwFmj.png" srcset="data:image/png;base64,666" alt="rfwFmj.png" border="0">
+
+<p>安装</p>
+<p>克隆项目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-autosuggestions $ZSH_CUSTOM&#x2F;plugins&#x2F;zsh-autosuggestions</span><br></pre></td></tr></table></figure>
+<p>在 ~/.zshrc 中配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins&#x3D;(其他的插件 zsh-autosuggestions)</span><br></pre></td></tr></table></figure>
+<p>使配置生效</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~&#x2F;.zshrc</span><br></pre></td></tr></table></figure>
+
+<p>如果感觉 → 补全不方便，还可以自定义补全的快捷键，比如我设置的逗号补全</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bindkey &#39;,&#39; autosuggest-accept</span><br></pre></td></tr></table></figure>
+<p>在 .zshrc 文件添加这句话即可。</p>
+<h3 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h3><p><a target="_blank" rel="noopener" href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/sublime">官网</a></p>
+<p>已经内置直接启用即可</p>
+<h4 id="作用-3"><a href="#作用-3" class="headerlink" title="作用"></a>作用</h4><p>在命令行使用 Sublime Text 打开文件、项目</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>st</td>
+<td>打开 sublime</td>
+</tr>
+<tr>
+<td>st + 文件夹</td>
+<td>打开该文件夹</td>
+</tr>
+<tr>
+<td>st + 文件</td>
+<td>打开该文件</td>
+</tr>
+<tr>
+<td>stt</td>
+<td>打开当前的文件夹，相当于 st .</td>
+</tr>
+<tr>
+<td>sst</td>
+<td>管理员权限 相当于 sudo st</td>
+</tr>
+</tbody></table>
+<h3 id="git-open"><a href="#git-open" class="headerlink" title="git-open"></a>git-open</h3><p><a target="_blank" rel="noopener" href="https://github.com/paulirish/git-open">官网</a></p>
+<p>在终端里打开当前项目的远程仓库地址</p>
+<p>不要小看这个插件欧，每次改完本地代码，当你想用浏览器访问远程仓库的时候，就知道这个插件多方便了 😘</p>
+<p>支持打开的远程仓库</p>
+<ul>
+<li>github.com</li>
+<li>gist.github.com</li>
+<li>gitlab.com</li>
+<li>自定义域名的 GitLab</li>
+<li>bitbucket.org</li>
+<li>Atlassian Bitbucket Server (formerly Atlassian Stash)</li>
+<li>Visual Studio Team Services</li>
+<li>Team Foundation Server (on-premises)<h4 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h4></li>
+</ul>
+<p>克隆项目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;paulirish&#x2F;git-open.git $ZSH_CUSTOM&#x2F;plugins&#x2F;git-open</span><br></pre></td></tr></table></figure>
+<p>在 ~/.zshrc 中配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins&#x3D;(其他的插件 git-open)</span><br></pre></td></tr></table></figure>
+<p>使配置生效</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~&#x2F;.zshrc</span><br></pre></td></tr></table></figure>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>我在 .zshrc 中的其他配置</p>
+<p>history 命令时间格式<br>history 命令查看历史输入命令的时间展示格式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HIST_STAMPS&#x3D;&quot;yyyy-mm-dd&quot;</span><br></pre></td></tr></table></figure>
+
+<p>时间会按照指定的格式展示，方便搜索查看</p>
+<h4 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h4><p>在 ~/.zshrc 文件中设置主题为 random 即可开启随机主题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZSH_THEME&#x3D;&quot;random&quot;</span><br></pre></td></tr></table></figure>
+<p>每次打开新的终端的时候，zsh 都会随机使用一个主题</p>
+<p>别名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alias go&#x3D;&quot;git-open&quot;</span><br><span class="line">alias rm&#x3D;&quot;trash&quot;</span><br></pre></td></tr></table></figure>
+<p>安装了一个 trash 命令，替代 rm 命令，被删除的文件会放到垃圾桶</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/sindresorhus/trash">trash 官网</a></p>
+<p>安装方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --global trash-cli</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias cp&#x3D;&quot;cp -i&quot;</span><br></pre></td></tr></table></figure>
+<p>防止 copy 的时候覆盖已存在的文件, 带上 i 选项，文件已存在的时候，会提示，需要确认才能 copy</p>
+<h3 id="Bat"><a href="#Bat" class="headerlink" title="Bat"></a>Bat</h3><h4 id="作用-4"><a href="#作用-4" class="headerlink" title="作用"></a>作用</h4><div class="note"><p>bat 代替 cat cat 某个文件，可以在终端直接输出文件内容，bat 相比 cat 增加了行号和颜色高亮 👍</p></div>
+<p>直接上个效果<br><img src="https://s3.ax1x.com/2020/12/26/rfw1B9.jpg" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfw1B9.jpg" srcset="data:image/png;base64,666" alt="rfw1B9.jpg"></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/sharkdp/bat">官网</a></p>
+<p>安装方式</p>
+<p>macOS 上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install bat</span><br></pre></td></tr></table></figure>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2020/12/12/%E5%8F%B2%E8%AE%B0-%E5%88%97%E4%BC%A0/'>
-            阅读全文
-          </a>
-        </div>
+      
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-12-26T03:35:52+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年12月26日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+          
   
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/12/12/%E5%8F%B2%E8%AE%B0-%E4%B8%96%E5%AE%B6/">
-        史记-世家
-      </a>
-    </h2>
-  
-  <div class='md'>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%8F%92%E4%BB%B6/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>插件</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        卷三十一　吴太伯世家第一吴太伯，太伯弟仲雍，皆周太王之子，而王季历【季历：周文王之父。】之兄也。季历贤，而有圣子昌，太王欲立季历以及昌，于是太伯、仲雍二人乃奔荆蛮，文【文：通“纹”。】身断发，示不可用，以避季历。季历果立，是为王季，而昌为文王。太伯之奔荆蛮，自号句吴。荆蛮义之，从而归之千余家，立为吴太伯。太伯卒，无子，弟仲雍立，是为吴仲雍。仲雍卒，子季简立。季简卒，子叔达立。叔达卒，子周章立...
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xiaogangei.github.io/2020/12/26/zsh-oh-my-zsh-%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/&title=zsh oh-my-zsh 插件推荐 - XiaoGang Blog&summary=在这里整理了一些Mac上ZSH中的常用的插件，使用这些插件可大大提升我们的工作效率。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xiaogangei.github.io/2020/12/26/zsh-oh-my-zsh-%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/&title=zsh oh-my-zsh 插件推荐 - XiaoGang Blog&summary=在这里整理了一些Mac上ZSH中的常用的插件，使用这些插件可大大提升我们的工作效率。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xiaogangei.github.io/2020/12/26/zsh-oh-my-zsh-%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/&title=zsh oh-my-zsh 插件推荐 - XiaoGang Blog&summary=在这里整理了一些Mac上ZSH中的常用的插件，使用这些插件可大大提升我们的工作效率。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-12-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%94%B5%E5%AD%90%E4%B9%A6/">电子书</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/12/12/%E5%8F%B2%E8%AE%B0-%E4%B8%96%E5%AE%B6/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
+
+
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/12/12/%E5%8F%B2%E8%AE%B0-%E5%85%AB%E4%B9%A6/">
-        史记-八书
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        卷二十三　礼书第一本篇介绍了礼仪制度的相关问题。崇尚礼乐是华夏民族有别于周边民族的显著特征，相传周公为礼乐的创制者。礼仪作为一种维系社会各阶层等级秩序的制度，在中华文明的发展进程中起到了相当重要的作用。春秋战国时期礼崩乐坏，孔子提出了恢复周礼的主张，并成为儒家思想的重要内容。汉武帝提倡儒术，受时代风尚的影响，司马迁将《礼书》列为八书之首。本篇大量引用先秦儒家典籍中的文字，司马迁在期间穿插议论...
-      
-    
+    </div>
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-12-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%94%B5%E5%AD%90%E4%B9%A6/">电子书</a>
-        
-      </div>
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class='readmore' href='/2020/12/12/%E5%8F%B2%E8%AE%B0-%E5%85%AB%E4%B9%A6/'>
-            阅读全文
-          </a>
-        </div>
+      
+        <a class='next' href='/2020/12/21/MAC%E5%B8%B8%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/'>
+          <p class='title'>MAC常用的软件分享<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Mac 上常用的软件整理方便以后使用的时候下载
+
+
+
+
+名称
+功能
+版本
+蓝奏云下载
+
+
+
+CleanMyMac X
+系统清理
+4.6.5
+下载
+
+
+HoRNDIS
+Android手机USB网络...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/12/12/%E5%8F%B2%E8%AE%B0-%E5%8D%81%E8%A1%A8/">
-        史记-十表
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        卷十三　三代世表第一陈仁锡：“史之为表也，一经一纬，从行曰经，横行曰纬。《三代世表》以帝王世为经，其属为纬，然世属长短参差不齐，以殷之属十七君，与夏之世十七王大略相当，至周之属十七君，与夏殷之世四十七王，则是周一君而当夏殷三王也。今本《世表》，殷周二属牵连横书，殷属终帝槐之世，周属终帝芒之世，自帝泄至帝辛有世而无属。又自成王以后，周之世与列侯之属长短亦不相当，皆由后人抄录之讹也。”《三代世表...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-12-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%94%B5%E5%AD%90%E4%B9%A6/">电子书</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/12/12/%E5%8F%B2%E8%AE%B0-%E5%8D%81%E8%A1%A8/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/12/12/%E5%8F%B2%E8%AE%B0-%E5%8D%81%E4%BA%8C%E6%9C%AC%E7%BA%AA/">
-        史记-十二本纪
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        前言作为有着五千年悠久文明历史的国度，中国有世界上最为完备的、不间断的历史记载，中华史籍浩如烟海，内容博大精深。这些史籍是我们民族宝贵的精神财富，也是全人类的共同遗产。中国历代史书中，以被赋予“正史”地位的“二十四史”最为重要，而“二十四史”之首就是西汉司马迁所著的《史记》。《史记》是一部贯穿古今的通史，从传说中的黄帝开始，一直写到汉武帝元狩元年（前122年），叙述了三千年左右的历史。全书略...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-12-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%94%B5%E5%AD%90%E4%B9%A6/">电子书</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/12/12/%E5%8F%B2%E8%AE%B0-%E5%8D%81%E4%BA%8C%E6%9C%AC%E7%BA%AA/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-    
-  
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -644,148 +732,28 @@
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://s2.ax1x.com/2019/10/19/Kmcm2n.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>XiaoGang</h2>
-        
-        
-        
-          <p><span id="jinrishici-sentence">XiaoGang Blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Android/" href="/categories/Android/"
-            id="categoriesAndroid"
-            ><div class='name'>Android</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Git/" href="/categories/Git/"
-            id="categoriesGit"
-            ><div class='name'>Git</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Mac/" href="/categories/Mac/"
-            id="categoriesMac"
-            ><div class='name'>Mac</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
-            id="categoriesE695B0E68DAEE5BA93"
-            ><div class='name'>数据库</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%94%B5%E5%AD%90%E4%B9%A6/" href="/categories/%E7%94%B5%E5%AD%90%E4%B9%A6/"
-            id="categoriesE794B5E5AD90E4B9A6"
-            ><div class='name'>电子书</div><div class='badge'>(8)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Git"><span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8"><span class="toc-text">作用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#autojump"><span class="toc-text">autojump</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8-1"><span class="toc-text">作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-text">使用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Z"><span class="toc-text">Z</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#zsh-syntax-highlighting"><span class="toc-text">zsh-syntax-highlighting</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8-zshrc-%E4%B8%AD%E9%85%8D%E7%BD%AE"><span class="toc-text">在 ~&#x2F;.zshrc 中配置</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#zsh-autosuggestions"><span class="toc-text">zsh-autosuggestions</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8-2"><span class="toc-text">作用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sublime"><span class="toc-text">sublime</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8-3"><span class="toc-text">作用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git-open"><span class="toc-text">git-open</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-1"><span class="toc-text">安装</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98"><span class="toc-text">主题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bat"><span class="toc-text">Bat</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8-4"><span class="toc-text">作用</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/ADB/" style="font-size: 14px; color: #999">-ADB</a> <a href="/tags/Git/" style="font-size: 14px; color: #999">-Git</a> <a href="/tags/Mac-PHP/" style="font-size: 14px; color: #999">-Mac -PHP</a> <a href="/tags/Mysql/" style="font-size: 14px; color: #999">-Mysql</a> <a href="/tags/%E5%8E%86%E5%8F%B2/" style="font-size: 24px; color: #555">历史</a> <a href="/tags/%E5%8F%B2%E8%AE%B0/" style="font-size: 24px; color: #555">史记</a> <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/" style="font-size: 14px; color: #999">软件分享</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
+
 
 
         
@@ -795,8 +763,8 @@
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="zsh oh-my-zsh 插件推荐";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
 
