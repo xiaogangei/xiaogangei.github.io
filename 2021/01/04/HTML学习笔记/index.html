@@ -19,13 +19,13 @@
 
   <!-- 页面元数据 -->
   
-  <title>zsh oh-my-zsh 插件推荐 - 小刚的博客</title>
+  <title>HTML学习笔记 - 小刚的博客</title>
   
-    <meta name="keywords" content="插件">
+    <meta name="keywords" content="HTML">
   
 
   
-    <meta name="description" content="在这里整理了一些Mac上ZSH中的常用的插件，使用这些插件可大大提升我们的工作效率。">
+    <meta name="description" content="学习HTML记录的一些笔记">
   
 
   <!-- feed -->
@@ -378,18 +378,12 @@
 
 
   
-    <div class='headimg-div'>
-      <a class='headimg-a'>
-        <img class='headimg' src='https://s3.ax1x.com/2020/12/26/rhxqO0.jpg'/>
-      </a>
-    </div>
-  
   <div class="article-meta" id="top">
     
     
     
       <h1 class="title">
-        zsh oh-my-zsh 插件推荐
+        HTML学习笔记
       </h1>
       <div class='new-meta-box'>
         
@@ -409,7 +403,7 @@
   <div class='new-meta-item category'>
     <a class='notlink'>
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <a class="category-link" href="/categories/Mac/">Mac</a>
+      <a class="category-link" href="/categories/Web/">Web</a>
     </a>
   </div>
 
@@ -420,7 +414,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年12月26日</p>
+    <p>发布于：2021年1月4日</p>
   </a>
 </div>
 
@@ -431,7 +425,7 @@
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="zsh oh-my-zsh 插件推荐" data-path="/2020/12/26/zsh-oh-my-zsh-%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/">
+      <div id="lc-pv" data-title="HTML学习笔记" data-path="/2021/01/04/HTML%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -448,140 +442,148 @@
 
 
   
-  <p>在这里整理了一些Mac上ZSH中的常用的插件，使用这些插件可大大提升我们的工作效率。</p>
+  <p>学习HTML记录的一些笔记</p>
 <a id="more"></a>
-<p>原文链接：<a target="_blank" rel="noopener" href="https://hufangyun.com/2017/zsh-plugin/">https://hufangyun.com/2017/zsh-plugin/</a></p>
-<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><div class="note"><p>默认已开启</p></div>
+<h2 id="lt-base-gt-标签"><a href="#lt-base-gt-标签" class="headerlink" title="&lt;base&gt; 标签"></a><code>&lt;base&gt;</code> 标签</h2><p>设置作为网页的基础连接</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">base</span> <span class="attr">href</span>=<span class="string">&quot;https://www.baidu.com&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h4><p>可以使用各种 git 命令缩写。😋</p>
-<p>比如</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add --all &#x3D;&#x3D;&#x3D;&gt; gaa</span><br><span class="line"></span><br><span class="line">git commit -m &#x3D;&#x3D;&#x3D;&gt; gcmsg</span><br></pre></td></tr></table></figure>
+<h2 id="lt-meta-gt-标签"><a href="#lt-meta-gt-标签" class="headerlink" title="&lt;meta&gt;标签"></a><code>&lt;meta&gt;</code>标签</h2><p>作为向浏览器传达元数据的标签<br>例如：<br>设置网页的字符编码</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mate</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>设置网页的关键词</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mate</span> <span class="attr">name</span>=<span class="string">&#x27;keywords&#x27;</span> <span class="attr">content</span>=<span class="string">&quot;HTML5,CSS3&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>设置网页的描述信息</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mate</span> <span class="attr">name</span>=<span class="string">&quot;description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;这是一个网页的描述&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>设置网页5秒自动刷新</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mate</span> <span class="attr">http-equiv</span>=<span class="string">&quot;refresh&quot;</span> <span class="attr">content</span>=<span class="string">&quot;5&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>设置网页5秒后自动跳转到百度</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mate</span> <span class="attr">http-equiv</span>=<span class="string">&#x27;refresh&#x27;</span> <span class="attr">content</span>=<span class="string">&quot;5;url=https://www.baidu.com&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/tag-meta.html"><img src="https://s3.ax1x.com/2021/01/04/sCyl4K.png" class="lazyload" data-srcset="https://s3.ax1x.com/2021/01/04/sCyl4K.png" srcset="data:image/png;base64,666" alt="sCyl4K.png"></a></p>
+<h2 id="lt-script-gt-标签"><a href="#lt-script-gt-标签" class="headerlink" title="&lt;script&gt;标签"></a><code>&lt;script&gt;</code>标签</h2><p>script标签是用于定义网页中的各种脚本的，例如JavaScript脚本</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="built_in">document</span>.write(<span class="string">&quot;Hello Word&quot;</span>);</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/tag-script.html"><img src="https://s3.ax1x.com/2021/01/04/sCyj56.png" class="lazyload" data-srcset="https://s3.ax1x.com/2021/01/04/sCyj56.png" srcset="data:image/png;base64,666" alt="sCyj56.png"></a></p>
+<h2 id="lt-style-gt-标签"><a href="#lt-style-gt-标签" class="headerlink" title="&lt;style&gt;标签"></a><code>&lt;style&gt;</code>标签</h2><p>style标签是用于定义网页中的CSS样式的，如果使用外联CSS请使用<code>&lt;link&gt;</code>标签</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line">    body&#123;</span><br><span class="line"><span class="css">        <span class="selector-tag">background</span>:<span class="selector-id">#333</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://s3.ax1x.com/2020/12/26/rfdWwR.png" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfdWwR.png" srcset="data:image/png;base64,666" alt="rfdWwR.png"></p>
-<p>查看所有 git 命令缩写</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~&#x2F;.oh-my-zsh&#x2F;plugins&#x2F;git&#x2F;git.plugin.zsh</span><br></pre></td></tr></table></figure>
-<p>或者筛选对应的命令</p>
-<p>如和 config 有关的命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias | grep config</span><br></pre></td></tr></table></figure>
-<h3 id="autojump"><a href="#autojump" class="headerlink" title="autojump"></a>autojump</h3><p><a target="_blank" rel="noopener" href="https://github.com/wting/autojump">autojump 官网</a></p>
-<h4 id="作用-1"><a href="#作用-1" class="headerlink" title="作用"></a>作用</h4><div class="note"><p>目录间快速跳转,不用再一直 cd 了 😁</p></div>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/tag-style.html"><img src="https://s3.ax1x.com/2021/01/04/sC6pxe.png" class="lazyload" data-srcset="https://s3.ax1x.com/2021/01/04/sC6pxe.png" srcset="data:image/png;base64,666" alt="sC6pxe.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/att-style-media.html">Media属性的用法</a></p>
+<h2 id="lt-link-gt-标签"><a href="#lt-link-gt-标签" class="headerlink" title="&lt;link&gt;标签"></a><code>&lt;link&gt;</code>标签</h2><p> link标签定义文档与外部资源的关系,最常见的用途是链接样式表。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;theme.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/tag-link.html">Link标签的的属性</a></p>
+<h2 id="lt-img-gt-标签"><a href="#lt-img-gt-标签" class="headerlink" title="&lt;img&gt;标签"></a><code>&lt;img&gt;</code>标签</h2><p>img标签主要是用来在网页中插入图片的</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">alt</span>=<span class="string">&#x27;这里是描述文字&#x27;</span> <span class="attr">scr</span>=<span class="string">&#x27;这里是图片链接&#x27;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">loading</span>=<span class="string">&quot;lazy&quot;</span> <span class="attr">src</span>=<span class="string">&quot;smiley-2.gif&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;Smiley face&quot;</span> <span class="attr">width</span>=<span class="string">&quot;42&quot;</span> <span class="attr">height</span>=<span class="string">&quot;42&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/tags/tag-img.html"><img src="https://s3.ax1x.com/2021/01/04/sCcllD.png" class="lazyload" data-srcset="https://s3.ax1x.com/2021/01/04/sCcllD.png" srcset="data:image/png;base64,666" alt="sCcllD.png"></a></p>
+<h2 id="HTML表格"><a href="#HTML表格" class="headerlink" title="HTML表格"></a>HTML表格</h2><p>表格由 <code>&lt;table&gt;</code> 标签来定义。每个表格均有若干行（由 <code>&lt;tr&gt; </code>标签定义），每行被分割为若干单元格（由 <code>&lt;td&gt; </code>标签定义）。字母 td 指表格数据（table data），即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>row 1, cell 1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>row 1, cell 2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>row 2, cell 1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>row 2, cell 2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<table border="1">
+    <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+    </tr>
+    <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+    </tr>
+</table>
 
-<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><p>使用 autojump 的缩写 j</p>
-<p>cd 命令进入 ~/user/github/Youthink 文件夹，下一次再想进入 Yourhink 文件夹的时候,直接 j youthink 即可<br>或者只输入 youthink 的一部分 youth 都行<br>删除无效路径</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">j --purge 无效路径</span><br></pre></td></tr></table></figure>
-<p>打开 muisc 文件夹</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jo music</span><br></pre></td></tr></table></figure>
-<p>多个参数一起使用 打开 /home/user/work/inbox</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">j w in</span><br></pre></td></tr></table></figure>
-<p>和 Z 不同 autojump 不是 zsh 内置的插件，需要额外安装。<br>首先安装 autojump，如果你用 Mac，可以使用 brew 安装：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install autojump</span><br></pre></td></tr></table></figure>
-<p>如果是 Linux，可以使用 git 安装，比如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git:&#x2F;&#x2F;github.com&#x2F;joelthelion&#x2F;autojump.git</span><br></pre></td></tr></table></figure>
-<p>进入目录，执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;install.py</span><br></pre></td></tr></table></figure>
-<p>最后把以下代码加入 .zshrc：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[[ -s ~&#x2F;.autojump&#x2F;etc&#x2F;profile.d&#x2F;autojump.sh ]] &amp;&amp; . ~&#x2F;.autojump&#x2F;etc&#x2F;profile.d&#x2F;autojump.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="Z"><a href="#Z" class="headerlink" title="Z"></a>Z</h3><p>如果你不想额外安装 autojump<br>可以使用 oh-my-zsh 内置的类似组件 Z<br>和 autojump 除了名字不一样，基本雷同。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">z -x 无效路径</span><br></pre></td></tr></table></figure>
-<p>效果图<br><img src="https://s3.ax1x.com/2020/12/26/rfdfT1.jpg" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfdfT1.jpg" srcset="data:image/png;base64,666" alt="rfdfT1.jpg"></p>
-<h3 id="zsh-syntax-highlighting"><a href="#zsh-syntax-highlighting" class="headerlink" title="zsh-syntax-highlighting"></a>zsh-syntax-highlighting</h3><p><a target="_blank" rel="noopener" href="https://github.com/zsh-users/zsh-syntax-highlighting">官网</a></p>
-<p>作用 平常用的ls、cd 等命令输入正确会绿色高亮显示，输入错误会显示其他的颜色。</p>
-<img src="https://s3.ax1x.com/2020/12/26/rfwk0s.jpg" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfwk0s.jpg" srcset="data:image/png;base64,666" alt="rfwk0s.jpg" border="0">
+<h4 id="单元格跨行"><a href="#单元格跨行" class="headerlink" title="单元格跨行"></a>单元格跨行</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>标题<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span> &gt;</span>内容<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>克隆项目</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-syntax-highlighting.git $&#123;ZSH_CUSTOM:-~&#x2F;.oh-my-zsh&#x2F;custom&#125;&#x2F;plugins&#x2F;zsh-syntax-highlighting</span><br></pre></td></tr></table></figure>
-<h4 id="在-zshrc-中配置"><a href="#在-zshrc-中配置" class="headerlink" title="在 ~/.zshrc 中配置"></a>在 ~/.zshrc 中配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins&#x3D;(其他的插件 zsh-syntax-highlighting)</span><br></pre></td></tr></table></figure>
-<p>使配置生效</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~&#x2F;.zshrc</span><br></pre></td></tr></table></figure>
-<h3 id="zsh-autosuggestions"><a href="#zsh-autosuggestions" class="headerlink" title="zsh-autosuggestions"></a>zsh-autosuggestions</h3><p><a target="_blank" rel="noopener" href="https://github.com/zsh-users/zsh-autosuggestions">官网</a></p>
-<h4 id="作用-2"><a href="#作用-2" class="headerlink" title="作用"></a>作用</h4><p>效率神器 👍</p>
-<p>如图输入命令时，会给出建议的命令（灰色部分）按键盘 → 补全</p>
-<img src="https://s3.ax1x.com/2020/12/26/rfwFmj.png" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfwFmj.png" srcset="data:image/png;base64,666" alt="rfwFmj.png" border="0">
+<table border="1" >
+      <tr>
+          <td  colspan="2">标题</td>
+      </tr>
+      <tr>
+          <td >内容</td>
+          <td>内容</td>
+      </tr>
+  </table>
 
-<p>安装</p>
-<p>克隆项目</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-autosuggestions $ZSH_CUSTOM&#x2F;plugins&#x2F;zsh-autosuggestions</span><br></pre></td></tr></table></figure>
-<p>在 ~/.zshrc 中配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins&#x3D;(其他的插件 zsh-autosuggestions)</span><br></pre></td></tr></table></figure>
-<p>使配置生效</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~&#x2F;.zshrc</span><br></pre></td></tr></table></figure>
+<h4 id="单元格跨列"><a href="#单元格跨列" class="headerlink" title="单元格跨列"></a>单元格跨列</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>标题<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span> <span class="attr">rowspan</span>=<span class="string">&#x27;2&#x27;</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+  <table border="1" >
+      <tr>
+          <td colspan="2">标题</td>
+      </tr>
+      <tr>
+          <td rowspan='2'>内容</td>
+          <td>内容</td>
+      </tr>
+      <tr>
+          <td>内容</td>
+      </tr>
+  </table>
 
-<p>如果感觉 → 补全不方便，还可以自定义补全的快捷键，比如我设置的逗号补全</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bindkey &#39;,&#39; autosuggest-accept</span><br></pre></td></tr></table></figure>
-<p>在 .zshrc 文件添加这句话即可。</p>
-<h3 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h3><p><a target="_blank" rel="noopener" href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/sublime">官网</a></p>
-<p>已经内置直接启用即可</p>
-<h4 id="作用-3"><a href="#作用-3" class="headerlink" title="作用"></a>作用</h4><p>在命令行使用 Sublime Text 打开文件、项目</p>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>st</td>
-<td>打开 sublime</td>
-</tr>
-<tr>
-<td>st + 文件夹</td>
-<td>打开该文件夹</td>
-</tr>
-<tr>
-<td>st + 文件</td>
-<td>打开该文件</td>
-</tr>
-<tr>
-<td>stt</td>
-<td>打开当前的文件夹，相当于 st .</td>
-</tr>
-<tr>
-<td>sst</td>
-<td>管理员权限 相当于 sudo st</td>
-</tr>
-</tbody></table>
-<h3 id="git-open"><a href="#git-open" class="headerlink" title="git-open"></a>git-open</h3><p><a target="_blank" rel="noopener" href="https://github.com/paulirish/git-open">官网</a></p>
-<p>在终端里打开当前项目的远程仓库地址</p>
-<p>不要小看这个插件欧，每次改完本地代码，当你想用浏览器访问远程仓库的时候，就知道这个插件多方便了 😘</p>
-<p>支持打开的远程仓库</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/html/html-tables.html"><img src="https://s3.ax1x.com/2021/01/04/sCgE38.png" class="lazyload" data-srcset="https://s3.ax1x.com/2021/01/04/sCgE38.png" srcset="data:image/png;base64,666" alt="sCgE38.png"></a></p>
+<h2 id="HTML列表"><a href="#HTML列表" class="headerlink" title="HTML列表"></a>HTML列表</h2><h3 id="HTML无序列表"><a href="#HTML无序列表" class="headerlink" title="HTML无序列表"></a>HTML无序列表</h3><p>无序列表是一个项目的列表，此列项目使用粗体圆点（典型的小黑圆圈）进行标记。</p>
+<p>无序列表使用 <code>&lt;ul&gt;</code> 标签</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>Coffee<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>Milk<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <ul>
-<li>github.com</li>
-<li>gist.github.com</li>
-<li>gitlab.com</li>
-<li>自定义域名的 GitLab</li>
-<li>bitbucket.org</li>
-<li>Atlassian Bitbucket Server (formerly Atlassian Stash)</li>
-<li>Visual Studio Team Services</li>
-<li>Team Foundation Server (on-premises)<h4 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h4></li>
+<li>Coffee</li>
+<li>Milk</li>
 </ul>
-<p>克隆项目</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;paulirish&#x2F;git-open.git $ZSH_CUSTOM&#x2F;plugins&#x2F;git-open</span><br></pre></td></tr></table></figure>
-<p>在 ~/.zshrc 中配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins&#x3D;(其他的插件 git-open)</span><br></pre></td></tr></table></figure>
-<p>使配置生效</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~&#x2F;.zshrc</span><br></pre></td></tr></table></figure>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>我在 .zshrc 中的其他配置</p>
-<p>history 命令时间格式<br>history 命令查看历史输入命令的时间展示格式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HIST_STAMPS&#x3D;&quot;yyyy-mm-dd&quot;</span><br></pre></td></tr></table></figure>
 
-<p>时间会按照指定的格式展示，方便搜索查看</p>
-<h4 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h4><p>在 ~/.zshrc 文件中设置主题为 random 即可开启随机主题</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZSH_THEME&#x3D;&quot;random&quot;</span><br></pre></td></tr></table></figure>
-<p>每次打开新的终端的时候，zsh 都会随机使用一个主题</p>
-<p>别名</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alias go&#x3D;&quot;git-open&quot;</span><br><span class="line">alias rm&#x3D;&quot;trash&quot;</span><br></pre></td></tr></table></figure>
-<p>安装了一个 trash 命令，替代 rm 命令，被删除的文件会放到垃圾桶</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/sindresorhus/trash">trash 官网</a></p>
-<p>安装方式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --global trash-cli</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias cp&#x3D;&quot;cp -i&quot;</span><br></pre></td></tr></table></figure>
-<p>防止 copy 的时候覆盖已存在的文件, 带上 i 选项，文件已存在的时候，会提示，需要确认才能 copy</p>
-<h3 id="Bat"><a href="#Bat" class="headerlink" title="Bat"></a>Bat</h3><h4 id="作用-4"><a href="#作用-4" class="headerlink" title="作用"></a>作用</h4><div class="note"><p>bat 代替 cat cat 某个文件，可以在终端直接输出文件内容，bat 相比 cat 增加了行号和颜色高亮 👍</p></div>
-<p>直接上个效果<br><img src="https://s3.ax1x.com/2020/12/26/rfw1B9.jpg" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfw1B9.jpg" srcset="data:image/png;base64,666" alt="rfw1B9.jpg"></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/sharkdp/bat">官网</a></p>
-<p>安装方式</p>
-<p>macOS 上</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install bat</span><br></pre></td></tr></table></figure>
+<h3 id="HTML-有序列表"><a href="#HTML-有序列表" class="headerlink" title="HTML 有序列表"></a>HTML 有序列表</h3><p>同样，有序列表也是一列项目，列表项目使用数字进行标记。 有序列表始于 <code>&lt;ol&gt;</code> 标签。每个列表项始于 <code>&lt;li&gt;</code> 标签。<br>列表项使用数字来标记。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>Coffee<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>Milk<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>Coffee</li>
+<li>Milk</li>
+</ol>
+
+<h3 id="HTML-自定义列表"><a href="#HTML-自定义列表" class="headerlink" title="HTML 自定义列表"></a>HTML 自定义列表</h3><p>自定义列表不仅仅是一列项目，而是项目及其注释的组合。<br>自定义列表以 <code>&lt;dl&gt;</code> 标签开始。每个自定义列表项以 <code>&lt;dt&gt;</code> 开始。每个自定义列表项的定义以 <code>&lt;dd&gt;</code> 开始。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dt</span>&gt;</span>Coffee<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dd</span>&gt;</span>- black hot drink<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dt</span>&gt;</span>Milk<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dd</span>&gt;</span>- white cold drink<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<dl>
+<dt>Coffee</dt>
+<dd>- black hot drink</dd>
+<dt>Milk</dt>
+<dd>- white cold drink</dd>
+</dl>
+
+<h2 id="HTML表单"><a href="#HTML表单" class="headerlink" title="HTML表单"></a>HTML表单</h2><p>表单是一个包含表单元素的区域。</p>
+<p>表单元素是允许用户在表单中输入内容,比如：文本域(textarea)、下拉列表、单选框(radio-buttons)、复选框(checkboxes)等等。</p>
+<p>表单使用表单标签 <code>&lt;form&gt;</code> 来设置:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">.</span><br><span class="line">input 元素</span><br><span class="line">.</span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="HTML-表单-输入元素"><a href="#HTML-表单-输入元素" class="headerlink" title="HTML 表单 - 输入元素"></a>HTML 表单 - 输入元素</h3><p>多数情况下被用到的表单标签是输入标签（<code>&lt;input&gt;</code>）。<br>输入类型是由类型属性（type）定义的。大多数经常被用到的输入类型如下：</p>
+<h4 id="文本域（Text-Fields）"><a href="#文本域（Text-Fields）" class="headerlink" title="文本域（Text Fields）"></a>文本域（Text Fields）</h4><p>文本域通过<code>&lt;input type=&quot;text&quot;&gt;</code> 标签来设定，当用户要在表单中键入字母、数字等内容时，就会用到文本域。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">First name: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;firstname&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">Last name: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;lastname&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<form>
+First name: <input type="text" name="firstname"><br>
+Last name: <input type="text" name="lastname">
+</form>
+#### 密码字段
+密码字段通过标签`<input type="password">` 来定义:
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">Password: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> <span class="attr">name</span>=<span class="string">&quot;pwd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<form>
+Password: <input type="password" name="pwd">
+</form>
+#### 单选按钮（Radio Buttons）
+`<input type="radio"> `标签定义了表单单选框选项
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;male&quot;</span>&gt;</span>Male<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;female&quot;</span>&gt;</span>Female</span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="复选框（Checkboxes）"><a href="#复选框（Checkboxes）" class="headerlink" title="复选框（Checkboxes）"></a>复选框（Checkboxes）</h4><p><code>&lt;input type=&quot;checkbox&quot;&gt; </code>定义了复选框. 用户需要从若干给定的选择中选取一个或若干选项。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;vehicle&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Bike&quot;</span>&gt;</span>I have a bike<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;vehicle&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Car&quot;</span>&gt;</span>I have a car</span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<form>
+<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+<input type="checkbox" name="vehicle" value="Car">I have a car
+</form>
+
+<h4 id="提交按钮-Submit-Button"><a href="#提交按钮-Submit-Button" class="headerlink" title="提交按钮(Submit Button)"></a>提交按钮(Submit Button)</h4><p><code>&lt;input type=&quot;submit&quot;&gt; </code>定义了提交按钮.</p>
+<p>当用户单击确认按钮时，表单的内容会被传送到另一个文件。表单的动作属性定义了目的文件的文件名。由动作属性定义的这个文件通常会对接收到的输入数据进行相关的处理。:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">name</span>=<span class="string">&quot;input&quot;</span> <span class="attr">action</span>=<span class="string">&quot;html_form_action.php&quot;</span> <span class="attr">method</span>=<span class="string">&quot;get&quot;</span>&gt;</span></span><br><span class="line">Username: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;user&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Submit&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<form name="input" action="html_form_action.php" method="get">
+Username: <input type="text" name="user">
+<input type="submit" value="Submit">
+</form>
+#### 文件上传
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">&quot;upload-form&quot;</span> <span class="attr">action</span>=<span class="string">&quot;upload.php&quot;</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span> <span class="attr">enctype</span>=<span class="string">&quot;multipart/form-data&quot;</span> &gt;</span></span><br><span class="line">　　　<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">id</span>=<span class="string">&quot;upload&quot;</span> <span class="attr">name</span>=<span class="string">&quot;upload&quot;</span> /&gt;</span> <span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line">　　　<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Upload&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<form id="upload-form" action="upload.php" method="post" enctype="multipart/form-data" >
+　　　<input type="file" id="upload" name="upload" /> <br />
+　　　<input type="submit" value="Upload" />
+</form>
+[![sCgE38.png](https://s3.ax1x.com/2021/01/04/sCgE38.png)](https://www.runoob.com/html/html-forms.html)
+
+<h2 id="HTML颜色"><a href="#HTML颜色" class="headerlink" title="HTML颜色"></a>HTML颜色</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/html/html-colors.html"><img src="https://s3.ax1x.com/2021/01/04/sCgwU1.png" class="lazyload" data-srcset="https://s3.ax1x.com/2021/01/04/sCgwU1.png" srcset="data:image/png;base64,666" alt="sCgwU1.png"></a></p>
+<h2 id="HTML字符实体"><a href="#HTML字符实体" class="headerlink" title="HTML字符实体"></a>HTML字符实体</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/html/html-entities.html"><img src="https://s3.ax1x.com/2021/01/04/sCg04x.png" class="lazyload" data-srcset="https://s3.ax1x.com/2021/01/04/sCg04x.png" srcset="data:image/png;base64,666" alt="sCg04x.png"></a></p>
 
   
   
@@ -601,10 +603,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-12-26T17:41:01+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-01-04T05:53:49+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年12月26日</p>
+    <p>更新于：2021年1月4日</p>
   </a>
 </div>
 
@@ -613,7 +615,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%8F%92%E4%BB%B6/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>插件</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/HTML/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>HTML</p></a></div>
 
 
         
@@ -626,7 +628,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xiaogangei.github.io/2020/12/26/zsh-oh-my-zsh-%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/&title=zsh oh-my-zsh 插件推荐 - 小刚的博客&summary=在这里整理了一些Mac上ZSH中的常用的插件，使用这些插件可大大提升我们的工作效率。"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xiaogangei.github.io/2021/01/04/HTML%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=HTML学习笔记 - 小刚的博客&summary=学习HTML记录的一些笔记"
           
           >
           
@@ -638,7 +640,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xiaogangei.github.io/2020/12/26/zsh-oh-my-zsh-%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/&title=zsh oh-my-zsh 插件推荐 - 小刚的博客&summary=在这里整理了一些Mac上ZSH中的常用的插件，使用这些插件可大大提升我们的工作效率。"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xiaogangei.github.io/2021/01/04/HTML%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=HTML学习笔记 - 小刚的博客&summary=学习HTML记录的一些笔记"
           
           >
           
@@ -650,7 +652,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xiaogangei.github.io/2020/12/26/zsh-oh-my-zsh-%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/&title=zsh oh-my-zsh 插件推荐 - 小刚的博客&summary=在这里整理了一些Mac上ZSH中的常用的插件，使用这些插件可大大提升我们的工作效率。"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xiaogangei.github.io/2021/01/04/HTML%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=HTML学习笔记 - 小刚的博客&summary=学习HTML记录的一些笔记"
           
           >
           
@@ -680,39 +682,14 @@
   
     <div class="prev-next">
       
-        <a class='prev' href='/2021/01/04/HTML%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>HTML学习笔记</p>
-          <p class='content'>学习HTML记录的一些笔记
-
-&lt;base&gt; 标签设置作为网页的基础连接
-1&lt;base href=&quot;https://www.baidu.com&quot; target...</p>
-        </a>
       
-      
-        <a class='next' href='/2020/12/21/MAC%E5%B8%B8%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/'>
-          <p class='title'>MAC常用的软件分享<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Mac 上常用的软件整理方便以后使用的时候下载
+        <a class='next' href='/2020/12/26/zsh-oh-my-zsh-%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/'>
+          <p class='title'>zsh oh-my-zsh 插件推荐<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>在这里整理了一些Mac上ZSH中的常用的插件，使用这些插件可大大提升我们的工作效率。
 
-
-
-系统工具
-
-
-名称
-功能
-版本
-蓝奏云下载
-
-
-
-CleanMyMac X
-系统清理
-4.6.5
-下载
-
-
-HoRNDIS
-Android手...</p>
+原文链接：https://hufangyun.com/2017/zsh-plugin/
+Git默认已开启
+...</p>
         </a>
       
     </div>
@@ -755,7 +732,7 @@ Android手...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Git"><span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8"><span class="toc-text">作用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#autojump"><span class="toc-text">autojump</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8-1"><span class="toc-text">作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-text">使用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Z"><span class="toc-text">Z</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#zsh-syntax-highlighting"><span class="toc-text">zsh-syntax-highlighting</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8-zshrc-%E4%B8%AD%E9%85%8D%E7%BD%AE"><span class="toc-text">在 ~&#x2F;.zshrc 中配置</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#zsh-autosuggestions"><span class="toc-text">zsh-autosuggestions</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8-2"><span class="toc-text">作用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sublime"><span class="toc-text">sublime</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8-3"><span class="toc-text">作用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git-open"><span class="toc-text">git-open</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-1"><span class="toc-text">安装</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98"><span class="toc-text">主题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bat"><span class="toc-text">Bat</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8-4"><span class="toc-text">作用</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-base-gt-%E6%A0%87%E7%AD%BE"><span class="toc-text">&lt;base&gt; 标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-meta-gt-%E6%A0%87%E7%AD%BE"><span class="toc-text">&lt;meta&gt;标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-script-gt-%E6%A0%87%E7%AD%BE"><span class="toc-text">&lt;script&gt;标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-style-gt-%E6%A0%87%E7%AD%BE"><span class="toc-text">&lt;style&gt;标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-link-gt-%E6%A0%87%E7%AD%BE"><span class="toc-text">&lt;link&gt;标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-img-gt-%E6%A0%87%E7%AD%BE"><span class="toc-text">&lt;img&gt;标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E8%A1%A8%E6%A0%BC"><span class="toc-text">HTML表格</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E6%A0%BC%E8%B7%A8%E8%A1%8C"><span class="toc-text">单元格跨行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E6%A0%BC%E8%B7%A8%E5%88%97"><span class="toc-text">单元格跨列</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E5%88%97%E8%A1%A8"><span class="toc-text">HTML列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-text">HTML无序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-text">HTML 有序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%97%E8%A1%A8"><span class="toc-text">HTML 自定义列表</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E8%A1%A8%E5%8D%95"><span class="toc-text">HTML表单</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML-%E8%A1%A8%E5%8D%95-%E8%BE%93%E5%85%A5%E5%85%83%E7%B4%A0"><span class="toc-text">HTML 表单 - 输入元素</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E5%9F%9F%EF%BC%88Text-Fields%EF%BC%89"><span class="toc-text">文本域（Text Fields）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E9%80%89%E6%A1%86%EF%BC%88Checkboxes%EF%BC%89"><span class="toc-text">复选框（Checkboxes）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%90%E4%BA%A4%E6%8C%89%E9%92%AE-Submit-Button"><span class="toc-text">提交按钮(Submit Button)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E9%A2%9C%E8%89%B2"><span class="toc-text">HTML颜色</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E5%AD%97%E7%AC%A6%E5%AE%9E%E4%BD%93"><span class="toc-text">HTML字符实体</span></a></li></ol>
     </div>
   </section>
 
@@ -775,7 +752,7 @@ Android手...</p>
 <script>
   window.pdata={}
   pdata.ispage=true;
-  pdata.postTitle="zsh oh-my-zsh 插件推荐";
+  pdata.postTitle="HTML学习笔记";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
 
