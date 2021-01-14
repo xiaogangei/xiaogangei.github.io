@@ -455,44 +455,44 @@
 
 <h4 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h4><p>可以使用各种 git 命令缩写。😋</p>
 <p>比如</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add --all &#x3D;&#x3D;&#x3D;&gt; gaa</span><br><span class="line"></span><br><span class="line">git commit -m &#x3D;&#x3D;&#x3D;&gt; gcmsg</span><br></pre></td></tr></table></figure>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span> <span class="comment">--all ===&gt; gaa</span></span><br><span class="line"></span><br><span class="line">git <span class="keyword">commit</span> -m ===&gt; gcmsg</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://s3.ax1x.com/2020/12/26/rfdWwR.png" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfdWwR.png" srcset="data:image/png;base64,666" alt="rfdWwR.png"></p>
 <p>查看所有 git 命令缩写</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~&#x2F;.oh-my-zsh&#x2F;plugins&#x2F;git&#x2F;git.plugin.zsh</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~<span class="regexp">/.oh-my-zsh/</span>plugins<span class="regexp">/git/gi</span>t.plugin.zsh</span><br></pre></td></tr></table></figure>
 <p>或者筛选对应的命令</p>
 <p>如和 config 有关的命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias | grep config</span><br></pre></td></tr></table></figure>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alias</span> | grep <span class="keyword">config</span></span><br></pre></td></tr></table></figure>
 <h3 id="autojump"><a href="#autojump" class="headerlink" title="autojump"></a>autojump</h3><p><a target="_blank" rel="noopener" href="https://github.com/wting/autojump">autojump 官网</a></p>
 <h4 id="作用-1"><a href="#作用-1" class="headerlink" title="作用"></a>作用</h4><div class="note"><p>目录间快速跳转,不用再一直 cd 了 😁</p></div>
 
 <h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><p>使用 autojump 的缩写 j</p>
 <p>cd 命令进入 ~/user/github/Youthink 文件夹，下一次再想进入 Yourhink 文件夹的时候,直接 j youthink 即可<br>或者只输入 youthink 的一部分 youth 都行<br>删除无效路径</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">j --purge 无效路径</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">j <span class="comment">--purge 无效路径</span></span><br></pre></td></tr></table></figure>
 <p>打开 muisc 文件夹</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jo music</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">jo music</span></span><br></pre></td></tr></table></figure>
 <p>多个参数一起使用 打开 /home/user/work/inbox</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">j w in</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">j w in</span></span><br></pre></td></tr></table></figure>
 <p>和 Z 不同 autojump 不是 zsh 内置的插件，需要额外安装。<br>首先安装 autojump，如果你用 Mac，可以使用 brew 安装：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install autojump</span><br></pre></td></tr></table></figure>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>autojump</span><br></pre></td></tr></table></figure>
 <p>如果是 Linux，可以使用 git 安装，比如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git:&#x2F;&#x2F;github.com&#x2F;joelthelion&#x2F;autojump.git</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git:<span class="regexp">//gi</span>thub.com<span class="regexp">/joelthelion/</span>autojump.git</span><br></pre></td></tr></table></figure>
 <p>进入目录，执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;install.py</span><br></pre></td></tr></table></figure>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./<span class="keyword">install</span>.py</span><br></pre></td></tr></table></figure>
 <p>最后把以下代码加入 .zshrc：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[[ -s ~&#x2F;.autojump&#x2F;etc&#x2F;profile.d&#x2F;autojump.sh ]] &amp;&amp; . ~&#x2F;.autojump&#x2F;etc&#x2F;profile.d&#x2F;autojump.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[[ -s ~<span class="regexp">/.autojump/</span>etc<span class="regexp">/profile.d/</span>autojump.sh ]] &amp;&amp; . ~<span class="regexp">/.autojump/</span>etc<span class="regexp">/profile.d/</span>autojump.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h3 id="Z"><a href="#Z" class="headerlink" title="Z"></a>Z</h3><p>如果你不想额外安装 autojump<br>可以使用 oh-my-zsh 内置的类似组件 Z<br>和 autojump 除了名字不一样，基本雷同。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">z -x 无效路径</span><br></pre></td></tr></table></figure>
+<figure class="highlight gml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">z -<span class="symbol">x</span> 无效路径</span><br></pre></td></tr></table></figure>
 <p>效果图<br><img src="https://s3.ax1x.com/2020/12/26/rfdfT1.jpg" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfdfT1.jpg" srcset="data:image/png;base64,666" alt="rfdfT1.jpg"></p>
 <h3 id="zsh-syntax-highlighting"><a href="#zsh-syntax-highlighting" class="headerlink" title="zsh-syntax-highlighting"></a>zsh-syntax-highlighting</h3><p><a target="_blank" rel="noopener" href="https://github.com/zsh-users/zsh-syntax-highlighting">官网</a></p>
 <p>作用 平常用的ls、cd 等命令输入正确会绿色高亮显示，输入错误会显示其他的颜色。</p>
 <img src="https://s3.ax1x.com/2020/12/26/rfwk0s.jpg" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfwk0s.jpg" srcset="data:image/png;base64,666" alt="rfwk0s.jpg" border="0">
 
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>克隆项目</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-syntax-highlighting.git $&#123;ZSH_CUSTOM:-~&#x2F;.oh-my-zsh&#x2F;custom&#125;&#x2F;plugins&#x2F;zsh-syntax-highlighting</span><br></pre></td></tr></table></figure>
-<h4 id="在-zshrc-中配置"><a href="#在-zshrc-中配置" class="headerlink" title="在 ~/.zshrc 中配置"></a>在 ~/.zshrc 中配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins&#x3D;(其他的插件 zsh-syntax-highlighting)</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/zsh-users/</span>zsh-syntax-highlighting.git <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span><span class="regexp">/plugins/</span>zsh-syntax-highlighting</span><br></pre></td></tr></table></figure>
+<h4 id="在-zshrc-中配置"><a href="#在-zshrc-中配置" class="headerlink" title="在 ~/.zshrc 中配置"></a>在 ~/.zshrc 中配置</h4><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">plugins</span>=(其他的插件 zsh-syntax-highlighting)</span><br></pre></td></tr></table></figure>
 <p>使配置生效</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~&#x2F;.zshrc</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure>
 <h3 id="zsh-autosuggestions"><a href="#zsh-autosuggestions" class="headerlink" title="zsh-autosuggestions"></a>zsh-autosuggestions</h3><p><a target="_blank" rel="noopener" href="https://github.com/zsh-users/zsh-autosuggestions">官网</a></p>
 <h4 id="作用-2"><a href="#作用-2" class="headerlink" title="作用"></a>作用</h4><p>效率神器 👍</p>
 <p>如图输入命令时，会给出建议的命令（灰色部分）按键盘 → 补全</p>
@@ -500,14 +500,14 @@
 
 <p>安装</p>
 <p>克隆项目</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-autosuggestions $ZSH_CUSTOM&#x2F;plugins&#x2F;zsh-autosuggestions</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git:<span class="regexp">//gi</span>thub.com<span class="regexp">/zsh-users/</span>zsh-autosuggestions <span class="variable">$ZSH_CUSTOM</span><span class="regexp">/plugins/</span>zsh-autosuggestions</span><br></pre></td></tr></table></figure>
 <p>在 ~/.zshrc 中配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins&#x3D;(其他的插件 zsh-autosuggestions)</span><br></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">plugins</span>=(其他的插件 zsh-autosuggestions)</span><br></pre></td></tr></table></figure>
 <p>使配置生效</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~&#x2F;.zshrc</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure>
 
 <p>如果感觉 → 补全不方便，还可以自定义补全的快捷键，比如我设置的逗号补全</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bindkey &#39;,&#39; autosuggest-accept</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bindkey <span class="string">&#x27;,&#x27;</span> autosuggest-<span class="keyword">accept</span></span><br></pre></td></tr></table></figure>
 <p>在 .zshrc 文件添加这句话即可。</p>
 <h3 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h3><p><a target="_blank" rel="noopener" href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/sublime">官网</a></p>
 <p>已经内置直接启用即可</p>
@@ -555,33 +555,33 @@
 <li>Team Foundation Server (on-premises)<h4 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h4></li>
 </ul>
 <p>克隆项目</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;paulirish&#x2F;git-open.git $ZSH_CUSTOM&#x2F;plugins&#x2F;git-open</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/paulirish/gi</span>t-open.git <span class="variable">$ZSH_CUSTOM</span><span class="regexp">/plugins/gi</span>t-open</span><br></pre></td></tr></table></figure>
 <p>在 ~/.zshrc 中配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins&#x3D;(其他的插件 git-open)</span><br></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">plugins</span>=(其他的插件 git-open)</span><br></pre></td></tr></table></figure>
 <p>使配置生效</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~&#x2F;.zshrc</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure>
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>我在 .zshrc 中的其他配置</p>
 <p>history 命令时间格式<br>history 命令查看历史输入命令的时间展示格式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HIST_STAMPS&#x3D;&quot;yyyy-mm-dd&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">HIST_STAMPS</span>=<span class="string">&quot;yyyy-mm-dd&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>时间会按照指定的格式展示，方便搜索查看</p>
 <h4 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h4><p>在 ~/.zshrc 文件中设置主题为 random 即可开启随机主题</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZSH_THEME&#x3D;&quot;random&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">ZSH_THEME</span>=<span class="string">&quot;random&quot;</span></span><br></pre></td></tr></table></figure>
 <p>每次打开新的终端的时候，zsh 都会随机使用一个主题</p>
 <p>别名</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alias go&#x3D;&quot;git-open&quot;</span><br><span class="line">alias rm&#x3D;&quot;trash&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight monkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alias</span> <span class="title">go</span>=<span class="string">&quot;git-open&quot;</span></span><br><span class="line"><span class="keyword">alias</span> <span class="title">rm</span>=<span class="string">&quot;trash&quot;</span></span><br></pre></td></tr></table></figure>
 <p>安装了一个 trash 命令，替代 rm 命令，被删除的文件会放到垃圾桶</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/sindresorhus/trash">trash 官网</a></p>
 <p>安装方式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --global trash-cli</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias cp&#x3D;&quot;cp -i&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> install --<span class="built_in">global</span> trash-cli</span><br></pre></td></tr></table></figure>
+<figure class="highlight monkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alias</span> <span class="title">cp</span>=<span class="string">&quot;cp -i&quot;</span></span><br></pre></td></tr></table></figure>
 <p>防止 copy 的时候覆盖已存在的文件, 带上 i 选项，文件已存在的时候，会提示，需要确认才能 copy</p>
 <h3 id="Bat"><a href="#Bat" class="headerlink" title="Bat"></a>Bat</h3><h4 id="作用-4"><a href="#作用-4" class="headerlink" title="作用"></a>作用</h4><div class="note"><p>bat 代替 cat cat 某个文件，可以在终端直接输出文件内容，bat 相比 cat 增加了行号和颜色高亮 👍</p></div>
 <p>直接上个效果<br><img src="https://s3.ax1x.com/2020/12/26/rfw1B9.jpg" class="lazyload" data-srcset="https://s3.ax1x.com/2020/12/26/rfw1B9.jpg" srcset="data:image/png;base64,666" alt="rfw1B9.jpg"></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/sharkdp/bat">官网</a></p>
 <p>安装方式</p>
 <p>macOS 上</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install bat</span><br></pre></td></tr></table></figure>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span><span class="keyword">bat</span></span><br></pre></td></tr></table></figure>
 
   
   
@@ -763,7 +763,6 @@ Android手机...</p>
 
 
 </aside>
-
 
 
         
@@ -1031,6 +1030,61 @@ var loadCSS = function( href, before, media, attributes ){
   
 
 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+    var clipboard = new ClipboardJS('.btn-copy', {
+        target: function (trigger) {
+            return trigger.nextElementSibling
+        }
+    });
+    function wait(callback, seconds) {
+        var timelag = null;
+        timelag = window.setTimeout(callback, seconds)
+    }
+    function pjax_initCopyCode() {
+		if($(".highlight .code pre").length+$(".article pre code").length==0)return;
+        var copyHtml = '';
+        copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+        copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
+        copyHtml += '</button>';
+        $(".highlight .code pre").before(copyHtml);
+        $(".article pre code").before(copyHtml);
+        clipboard.off('success').on('success', function (e) {
+            let $btn = $(e.trigger);
+            $btn.addClass('copied');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-check-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPIED';
+            wait(function () {
+                $icon.removeClass('fa-check-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        });
+        clipboard.off('error').on('error', function (e) {
+            e.clearSelection();
+            let $btn = $(e.trigger);
+            $btn.addClass('copy-failed');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-times-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPY FAILED';
+            wait(function () {
+                $icon.removeClass('fa-times-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        })
+    }
+    $(function () {
+        pjax_initCopyCode()
+    });
+</script>
 
 
 
@@ -1642,6 +1696,8 @@ document.addEventListener("pjax:success", listennSidebarTOC);
         
         
         
+          pjax_initCopyCode();
+        
         
           pjax_valine();
         
@@ -1663,5 +1719,6 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+
 </body>
 </html>

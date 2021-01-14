@@ -445,10 +445,10 @@
 
   
   <h3 id="1：-用SET-PASSWORD命令"><a href="#1：-用SET-PASSWORD命令" class="headerlink" title="1： 用SET PASSWORD命令"></a>1： 用SET PASSWORD命令</h3><p>首先登录MySQL。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-- 格式：mysql&gt;</span><br><span class="line">set password for 用户名@localhost &#x3D; password(‘新密码’);</span><br><span class="line">-- 例子：mysql&gt;</span><br><span class="line">set password for root@localhost &#x3D; password(‘123’);</span><br></pre></td></tr></table></figure>
-<h3 id="2：用mysqladmin"><a href="#2：用mysqladmin" class="headerlink" title="2：用mysqladmin"></a>2：用mysqladmin</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-- 格式：</span><br><span class="line">mysqladmin -u用户名 -p旧密码 password 新密码</span><br><span class="line">-- 例子：</span><br><span class="line">mysqladmin -uroot -p123456 password 123</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 格式：mysql&gt;</span></span><br><span class="line"><span class="keyword">set</span> <span class="keyword">password</span> <span class="keyword">for</span> 用户名@localhost = <span class="keyword">password</span>(‘新密码’);</span><br><span class="line"><span class="comment">-- 例子：mysql&gt;</span></span><br><span class="line"><span class="keyword">set</span> <span class="keyword">password</span> <span class="keyword">for</span> root@localhost = <span class="keyword">password</span>(‘<span class="number">123</span>’);</span><br></pre></td></tr></table></figure>
+<h3 id="2：用mysqladmin"><a href="#2：用mysqladmin" class="headerlink" title="2：用mysqladmin"></a>2：用mysqladmin</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 格式：</span></span><br><span class="line">mysqladmin -u用户名 -p旧密码 <span class="keyword">password</span> 新密码</span><br><span class="line"><span class="comment">-- 例子：</span></span><br><span class="line">mysqladmin -uroot -p123456 <span class="keyword">password</span> <span class="number">123</span></span><br></pre></td></tr></table></figure>
 <h3 id="3：用UPDATE直接编辑user表"><a href="#3：用UPDATE直接编辑user表" class="headerlink" title="3：用UPDATE直接编辑user表"></a>3：用UPDATE直接编辑user表</h3><p>首先登录MySQL。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">use mysql;</span><br><span class="line">update user set password&#x3D;password(‘123’) where user&#x3D;’root’ and host&#x3D;’localhost’;</span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> mysql;</span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> <span class="keyword">password</span>=<span class="keyword">password</span>(‘<span class="number">123</span>’) <span class="keyword">where</span> <span class="keyword">user</span>=’root’ <span class="keyword">and</span> host=’localhost’;</span><br><span class="line"><span class="keyword">flush</span> <span class="keyword">privileges</span>;</span><br></pre></td></tr></table></figure>
 <h3 id="4：在忘记root密码的时候，可以这样"><a href="#4：在忘记root密码的时候，可以这样" class="headerlink" title="4：在忘记root密码的时候，可以这样"></a>4：在忘记root密码的时候，可以这样</h3><p>以windows为例：</p>
 <p>关闭正在运行的MySQL服务。<br>打开DOS窗口，转到mysql\bin目录。<br>输入mysqld –skip-grant-tables 回车。–skip-grant-tables 的意思是启动MySQL服务的时候跳过权限表认证。<br>再开一个DOS窗口（因为刚才那个DOS窗口已经不能动了），转到mysql\bin目录。<br>输入mysql回车，如果成功，将出现MySQL提示符 &gt;。<br>连接权限数据库： use mysql; 。<br>改密码：update user set password=password(“123”) where user=”root”;（别忘了最后加分号） 。<br>刷新权限（必须步骤）：flush privileges;　。<br>退出 quit。<br>注销系统，再进入，使用用户名root和刚才设置的新密码123登录。</p>
 
@@ -611,7 +611,6 @@ input命令的使用格式Android的键盘和点击模拟时间全部靠input命
 
 
 </aside>
-
 
 
         
@@ -879,6 +878,61 @@ var loadCSS = function( href, before, media, attributes ){
   
 
 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+    var clipboard = new ClipboardJS('.btn-copy', {
+        target: function (trigger) {
+            return trigger.nextElementSibling
+        }
+    });
+    function wait(callback, seconds) {
+        var timelag = null;
+        timelag = window.setTimeout(callback, seconds)
+    }
+    function pjax_initCopyCode() {
+		if($(".highlight .code pre").length+$(".article pre code").length==0)return;
+        var copyHtml = '';
+        copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+        copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
+        copyHtml += '</button>';
+        $(".highlight .code pre").before(copyHtml);
+        $(".article pre code").before(copyHtml);
+        clipboard.off('success').on('success', function (e) {
+            let $btn = $(e.trigger);
+            $btn.addClass('copied');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-check-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPIED';
+            wait(function () {
+                $icon.removeClass('fa-check-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        });
+        clipboard.off('error').on('error', function (e) {
+            e.clearSelection();
+            let $btn = $(e.trigger);
+            $btn.addClass('copy-failed');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-times-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPY FAILED';
+            wait(function () {
+                $icon.removeClass('fa-times-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        })
+    }
+    $(function () {
+        pjax_initCopyCode()
+    });
+</script>
 
 
 
@@ -1490,6 +1544,8 @@ document.addEventListener("pjax:success", listennSidebarTOC);
         
         
         
+          pjax_initCopyCode();
+        
         
           pjax_valine();
         
@@ -1511,5 +1567,6 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+
 </body>
 </html>

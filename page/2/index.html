@@ -385,6 +385,60 @@
   
   
     <div class='headimg-div'>
+      <a class='headimg-a' href="/2020/12/11/Mac%E5%AE%89%E8%A3%85PHP%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83-%E4%BD%BF%E7%94%A8homebrew/">
+        <img class='headimg' src='https://s3.ax1x.com/2021/01/13/sNXJSJ.png'/>
+      </a>
+    </div>
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/12/11/Mac%E5%AE%89%E8%A3%85PHP%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83-%E4%BD%BF%E7%94%A8homebrew/">
+        Mac安装PHP开发环境(使用homebrew)
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        一、安装Nginx1.1 安装命令1brew install nginx
+1.2 设置文件权限12sudo chown root:wheel /usr/local/opt/nginx/bin/nginxsudo chmod u+s /usr/local/opt/nginx/bin/nginx
+1.3 设置开机自启动123456mkdir -p ~/Library/LaunchAgentscp...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time>2020-12-11</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Mac/">Mac</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2020/12/11/Mac%E5%AE%89%E8%A3%85PHP%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83-%E4%BD%BF%E7%94%A8homebrew/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+    <div class='headimg-div'>
       <a class='headimg-a' href="/2020/12/11/Git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E5%92%8C%E9%94%99%E8%AF%AF/">
         <img class='headimg' src='https://s3.ax1x.com/2021/01/13/sNXNO1.png'/>
       </a>
@@ -448,8 +502,8 @@
     
       
         1： 用SET PASSWORD命令首先登录MySQL。
-1234-- 格式：mysql&gt;set password for 用户名@localhost &#x3D; password(‘新密码’);-- 例子：mysql&gt;set password for root@localhost &#x3D; password(‘123’);
-2：用mysqladmin1234-- 格式：m...
+1234-- 格式：mysql&gt;set password for 用户名@localhost = password(‘新密码’);-- 例子：mysql&gt;set password for root@localhost = password(‘123’);
+2：用mysqladmin1234-- 格式：mysqladmin ...
       
     
   </div>
@@ -976,6 +1030,61 @@ var loadCSS = function( href, before, media, attributes ){
   
 
 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+    var clipboard = new ClipboardJS('.btn-copy', {
+        target: function (trigger) {
+            return trigger.nextElementSibling
+        }
+    });
+    function wait(callback, seconds) {
+        var timelag = null;
+        timelag = window.setTimeout(callback, seconds)
+    }
+    function pjax_initCopyCode() {
+		if($(".highlight .code pre").length+$(".article pre code").length==0)return;
+        var copyHtml = '';
+        copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+        copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
+        copyHtml += '</button>';
+        $(".highlight .code pre").before(copyHtml);
+        $(".article pre code").before(copyHtml);
+        clipboard.off('success').on('success', function (e) {
+            let $btn = $(e.trigger);
+            $btn.addClass('copied');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-check-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPIED';
+            wait(function () {
+                $icon.removeClass('fa-check-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        });
+        clipboard.off('error').on('error', function (e) {
+            e.clearSelection();
+            let $btn = $(e.trigger);
+            $btn.addClass('copy-failed');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-times-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPY FAILED';
+            wait(function () {
+                $icon.removeClass('fa-times-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        })
+    }
+    $(function () {
+        pjax_initCopyCode()
+    });
+</script>
 
 
 
@@ -1587,6 +1696,8 @@ document.addEventListener("pjax:success", listennSidebarTOC);
         
         
         
+          pjax_initCopyCode();
+        
         
           pjax_valine();
         
@@ -1608,5 +1719,6 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+
 </body>
 </html>

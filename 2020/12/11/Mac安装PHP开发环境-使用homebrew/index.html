@@ -446,21 +446,21 @@
 
 
   
-  <h2 id="一、安装Nginx"><a href="#一、安装Nginx" class="headerlink" title="一、安装Nginx"></a>一、安装Nginx</h2><h3 id="1-1-安装命令"><a href="#1-1-安装命令" class="headerlink" title="1.1 安装命令"></a>1.1 安装命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install nginx</span><br></pre></td></tr></table></figure>
-<h3 id="1-2-设置文件权限"><a href="#1-2-设置文件权限" class="headerlink" title="1.2 设置文件权限"></a>1.2 设置文件权限</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chown root:wheel &#x2F;usr&#x2F;local&#x2F;opt&#x2F;nginx&#x2F;bin&#x2F;nginx</span><br><span class="line">sudo chmod u+s &#x2F;usr&#x2F;local&#x2F;opt&#x2F;nginx&#x2F;bin&#x2F;nginx</span><br></pre></td></tr></table></figure>
-<h3 id="1-3-设置开机自启动"><a href="#1-3-设置开机自启动" class="headerlink" title="1.3 设置开机自启动"></a>1.3 设置开机自启动</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~&#x2F;Library&#x2F;LaunchAgents</span><br><span class="line">cp &#x2F;usr&#x2F;local&#x2F;opt&#x2F;nginx&#x2F;homebrew.mxcl.nginx.plist ~&#x2F;Library&#x2F;LaunchAgents&#x2F;</span><br><span class="line"># 设置开机启动</span><br><span class="line">launchctl load -w ~&#x2F;Library&#x2F;LaunchAgents&#x2F;homebrew.mxcl.nginx.plist</span><br><span class="line"># 取消开机启动</span><br><span class="line">launchctl unload ~&#x2F;Library&#x2F;LaunchAgents&#x2F;homebrew.mxcl.nginx.plist</span><br></pre></td></tr></table></figure>
-<h3 id="1-4-Nginx常用命令"><a href="#1-4-Nginx常用命令" class="headerlink" title="1.4 Nginx常用命令"></a>1.4 Nginx常用命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo nginx #打开nginx</span><br><span class="line">nginx -s reload | reopen | stop | quit #重新加载配置|重启|停止|退出</span><br><span class="line">nginx -t #测试配置是否有语法错误</span><br><span class="line">#如果提示pid丢失的话，就用这句话</span><br><span class="line">nginx -c &#x2F;usr&#x2F;local&#x2F;etc&#x2F;nginx&#x2F;nginx.conf</span><br></pre></td></tr></table></figure>
+  <h2 id="一、安装Nginx"><a href="#一、安装Nginx" class="headerlink" title="一、安装Nginx"></a>一、安装Nginx</h2><h3 id="1-1-安装命令"><a href="#1-1-安装命令" class="headerlink" title="1.1 安装命令"></a>1.1 安装命令</h3><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>nginx</span><br></pre></td></tr></table></figure>
+<h3 id="1-2-设置文件权限"><a href="#1-2-设置文件权限" class="headerlink" title="1.2 设置文件权限"></a>1.2 设置文件权限</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chown root:wheel <span class="regexp">/usr/</span>local<span class="regexp">/opt/</span>nginx<span class="regexp">/bin/</span>nginx</span><br><span class="line">sudo chmod u+s <span class="regexp">/usr/</span>local<span class="regexp">/opt/</span>nginx<span class="regexp">/bin/</span>nginx</span><br></pre></td></tr></table></figure>
+<h3 id="1-3-设置开机自启动"><a href="#1-3-设置开机自启动" class="headerlink" title="1.3 设置开机自启动"></a>1.3 设置开机自启动</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~<span class="regexp">/Library/</span>LaunchAgents</span><br><span class="line">cp <span class="regexp">/usr/</span>local<span class="regexp">/opt/</span>nginx<span class="regexp">/homebrew.mxcl.nginx.plist ~/</span>Library<span class="regexp">/LaunchAgents/</span></span><br><span class="line"><span class="comment"># 设置开机启动</span></span><br><span class="line">launchctl load -w ~<span class="regexp">/Library/</span>LaunchAgents/homebrew.mxcl.nginx.plist</span><br><span class="line"><span class="comment"># 取消开机启动</span></span><br><span class="line">launchctl unload ~<span class="regexp">/Library/</span>LaunchAgents/homebrew.mxcl.nginx.plist</span><br></pre></td></tr></table></figure>
+<h3 id="1-4-Nginx常用命令"><a href="#1-4-Nginx常用命令" class="headerlink" title="1.4 Nginx常用命令"></a>1.4 Nginx常用命令</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo nginx <span class="comment">#打开nginx</span></span><br><span class="line">nginx -s reload | reopen | stop | quit <span class="comment">#重新加载配置|重启|停止|退出</span></span><br><span class="line">nginx -t <span class="comment">#测试配置是否有语法错误</span></span><br><span class="line"><span class="comment">#如果提示pid丢失的话，就用这句话</span></span><br><span class="line">nginx -c <span class="regexp">/usr/</span>local<span class="regexp">/etc/</span>nginx/nginx.conf</span><br></pre></td></tr></table></figure>
 <h3 id="1-5-查看信息"><a href="#1-5-查看信息" class="headerlink" title="1.5 查看信息"></a>1.5 查看信息</h3><p>点击<a target="_blank" rel="noopener" href="http://localhost:8080/">http://localhost:8080</a> 查看是否安装成功</p>
-<h2 id="二、安装PHP7-1"><a href="#二、安装PHP7-1" class="headerlink" title="二、安装PHP7.1"></a>二、安装PHP7.1</h2><h3 id="2-1-安装命令"><a href="#2-1-安装命令" class="headerlink" title="2.1 安装命令"></a>2.1 安装命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install php71</span><br></pre></td></tr></table></figure>
+<h2 id="二、安装PHP7-1"><a href="#二、安装PHP7-1" class="headerlink" title="二、安装PHP7.1"></a>二、安装PHP7.1</h2><h3 id="2-1-安装命令"><a href="#2-1-安装命令" class="headerlink" title="2.1 安装命令"></a>2.1 安装命令</h3><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>php71</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-2-设置全局变量"><a href="#2-2-设置全局变量" class="headerlink" title="2.2 设置全局变量"></a>2.2 设置全局变量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">echo &#39;export PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;bin:&#x2F;usr&#x2F;sbin:$PATH&#39; &gt;&gt; ~&#x2F;.bash_profile</span><br><span class="line">source ~&#x2F;.bash_profile</span><br><span class="line">echo &#39;export PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php@7.1&#x2F;7.1.33&#x2F;bin:$PATH&#39; &gt;&gt; ~&#x2F;.bashrc</span><br><span class="line">source ~&#x2F;.bashrc</span><br></pre></td></tr></table></figure>
+<h3 id="2-2-设置全局变量"><a href="#2-2-设置全局变量" class="headerlink" title="2.2 设置全局变量"></a>2.2 设置全局变量</h3><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> &#x27;export PATH=<span class="string">/usr/local/bin</span>:<span class="string">/usr/sbin</span>:$PATH&#x27; &gt;&gt; ~<span class="string">/.bash_profile</span></span><br><span class="line">source ~<span class="string">/.bash_profile</span></span><br><span class="line"><span class="keyword">echo</span> &#x27;export PATH=<span class="string">/usr/local/Cellar/php</span>@7.1/7.1.33/bin:$PATH&#x27; &gt;&gt; ~<span class="string">/.bashrc</span></span><br><span class="line">source ~<span class="string">/.bashrc</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="2-3-设置开机自启动"><a href="#2-3-设置开机自启动" class="headerlink" title="2.3 设置开机自启动"></a>2.3 设置开机自启动</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~&#x2F;Library&#x2F;LaunchAgents</span><br><span class="line">cp &#x2F;usr&#x2F;local&#x2F;opt&#x2F;php@7.1&#x2F;homebrew.mxcl.php@7.1.plist ~&#x2F;Library&#x2F;LaunchAgents&#x2F;</span><br><span class="line"># 设置开机启动</span><br><span class="line">launchctl load -w ~&#x2F;Library&#x2F;LaunchAgents&#x2F;homebrew.mxcl.php@7.1.plist</span><br><span class="line"># 取消开机启动</span><br><span class="line">launchctl unload ~&#x2F;Library&#x2F;LaunchAgents&#x2F;homebrew.mxcl.php@7.1.plist</span><br></pre></td></tr></table></figure>
-<h2 id="三、安装MySql"><a href="#三、安装MySql" class="headerlink" title="三、安装MySql"></a>三、安装MySql</h2><h3 id="3-1-安装命令"><a href="#3-1-安装命令" class="headerlink" title="3.1 安装命令"></a>3.1 安装命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install mysql</span><br></pre></td></tr></table></figure>
+<h3 id="2-3-设置开机自启动"><a href="#2-3-设置开机自启动" class="headerlink" title="2.3 设置开机自启动"></a>2.3 设置开机自启动</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~<span class="regexp">/Library/</span>LaunchAgents</span><br><span class="line">cp <span class="regexp">/usr/</span>local<span class="regexp">/opt/</span>php@<span class="number">7.1</span><span class="regexp">/homebrew.mxcl.php@7.1.plist ~/</span>Library<span class="regexp">/LaunchAgents/</span></span><br><span class="line"><span class="comment"># 设置开机启动</span></span><br><span class="line">launchctl load -w ~<span class="regexp">/Library/</span>LaunchAgents/homebrew.mxcl.php@<span class="number">7.1</span>.plist</span><br><span class="line"><span class="comment"># 取消开机启动</span></span><br><span class="line">launchctl unload ~<span class="regexp">/Library/</span>LaunchAgents/homebrew.mxcl.php@<span class="number">7.1</span>.plist</span><br></pre></td></tr></table></figure>
+<h2 id="三、安装MySql"><a href="#三、安装MySql" class="headerlink" title="三、安装MySql"></a>三、安装MySql</h2><h3 id="3-1-安装命令"><a href="#3-1-安装命令" class="headerlink" title="3.1 安装命令"></a>3.1 安装命令</h3><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>mysql</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-2-设置开机自启动"><a href="#3-2-设置开机自启动" class="headerlink" title="3.2 设置开机自启动"></a>3.2 设置开机自启动</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~&#x2F;Library&#x2F;LaunchAgents</span><br><span class="line">cp &#x2F;usr&#x2F;local&#x2F;opt&#x2F;php@7.1&#x2F;homebrew.mxcl.mysql.plist ~&#x2F;Library&#x2F;LaunchAgents&#x2F;</span><br><span class="line"># 设置开机启动</span><br><span class="line">launchctl load -w ~&#x2F;Library&#x2F;LaunchAgents&#x2F;homebrew.mxcl.mysql.plist</span><br><span class="line"># 取消开机启动</span><br><span class="line">launchctl unload ~&#x2F;Library&#x2F;LaunchAgents&#x2F;homebrew.mxcl.mysql.plist</span><br></pre></td></tr></table></figure>
+<h3 id="3-2-设置开机自启动"><a href="#3-2-设置开机自启动" class="headerlink" title="3.2 设置开机自启动"></a>3.2 设置开机自启动</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~<span class="regexp">/Library/</span>LaunchAgents</span><br><span class="line">cp <span class="regexp">/usr/</span>local<span class="regexp">/opt/</span>php@<span class="number">7.1</span><span class="regexp">/homebrew.mxcl.mysql.plist ~/</span>Library<span class="regexp">/LaunchAgents/</span></span><br><span class="line"><span class="comment"># 设置开机启动</span></span><br><span class="line">launchctl load -w ~<span class="regexp">/Library/</span>LaunchAgents/homebrew.mxcl.mysql.plist</span><br><span class="line"><span class="comment"># 取消开机启动</span></span><br><span class="line">launchctl unload ~<span class="regexp">/Library/</span>LaunchAgents/homebrew.mxcl.mysql.plist</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-3-设置root账户和密码"><a href="#3-3-设置root账户和密码" class="headerlink" title="3.3 设置root账户和密码"></a>3.3 设置root账户和密码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> #一直跟着提示走就行。</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;mysql&#x2F;8.0.18&#x2F;bin&#x2F;mysql_secure_installation</span><br></pre></td></tr></table></figure>
+<h3 id="3-3-设置root账户和密码"><a href="#3-3-设置root账户和密码" class="headerlink" title="3.3 设置root账户和密码"></a>3.3 设置root账户和密码</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">#一直跟着提示走就行。</span></span><br><span class="line"><span class="regexp">/usr/</span>local<span class="regexp">/Cellar/my</span>sql<span class="regexp">/8.0.18/</span>bin/mysql_secure_installation</span><br></pre></td></tr></table></figure>
 
   
   
@@ -621,7 +621,6 @@
 
 
 </aside>
-
 
 
         
@@ -889,6 +888,61 @@ var loadCSS = function( href, before, media, attributes ){
   
 
 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+    var clipboard = new ClipboardJS('.btn-copy', {
+        target: function (trigger) {
+            return trigger.nextElementSibling
+        }
+    });
+    function wait(callback, seconds) {
+        var timelag = null;
+        timelag = window.setTimeout(callback, seconds)
+    }
+    function pjax_initCopyCode() {
+		if($(".highlight .code pre").length+$(".article pre code").length==0)return;
+        var copyHtml = '';
+        copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+        copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
+        copyHtml += '</button>';
+        $(".highlight .code pre").before(copyHtml);
+        $(".article pre code").before(copyHtml);
+        clipboard.off('success').on('success', function (e) {
+            let $btn = $(e.trigger);
+            $btn.addClass('copied');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-check-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPIED';
+            wait(function () {
+                $icon.removeClass('fa-check-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        });
+        clipboard.off('error').on('error', function (e) {
+            e.clearSelection();
+            let $btn = $(e.trigger);
+            $btn.addClass('copy-failed');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-times-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPY FAILED';
+            wait(function () {
+                $icon.removeClass('fa-times-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        })
+    }
+    $(function () {
+        pjax_initCopyCode()
+    });
+</script>
 
 
 
@@ -1500,6 +1554,8 @@ document.addEventListener("pjax:success", listennSidebarTOC);
         
         
         
+          pjax_initCopyCode();
+        
         
           pjax_valine();
         
@@ -1521,5 +1577,6 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+
 </body>
 </html>

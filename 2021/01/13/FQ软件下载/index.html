@@ -452,10 +452,10 @@
 
 <p>Mac蓝奏云密码：491w</p>
 <h3 id="节点订阅："><a href="#节点订阅：" class="headerlink" title="节点订阅："></a>节点订阅：</h3><p>V2ray订阅链接：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.recear.xyz&#x2F;link&#x2F;aW3R50zMg13Cpgde?sub&#x3D;3</span><br></pre></td></tr></table></figure>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https</span>://www.recear.xyz/link/aW<span class="number">3</span>R<span class="number">50</span>zMg<span class="number">13</span>Cpgde?sub=<span class="number">3</span></span><br></pre></td></tr></table></figure>
 <p>SSR订阅链接：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.recear.xyz&#x2F;link&#x2F;aW3R50zMg13Cpgde?sub&#x3D;1</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">https</span>://www.recear.xyz/link/aW<span class="number">3</span>R<span class="number">50</span>zMg<span class="number">13</span>Cpgde?sub=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<h3 id="过期时间：2021-1-16"><a href="#过期时间：2021-1-16" class="headerlink" title="过期时间：2021-1-16"></a>过期时间：2021-1-16</h3>
   
   
     
@@ -474,10 +474,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-01-13T21:08:30+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-01-14T20:59:27+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2021年1月13日</p>
+    <p>更新于：2021年1月14日</p>
   </a>
 </div>
 
@@ -550,6 +550,12 @@
   
     <div class="prev-next">
       
+        <a class='prev' href='/2021/01/13/test/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>test</p>
+          <p class='content'>
+</p>
+        </a>
+      
       
         <a class='next' href='/2021/01/13/Linux-top%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/'>
           <p class='title'>Linux top命令的使用详解<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
@@ -597,7 +603,7 @@ top 命令是 Linux 下最常用的系统监控命令。默认执行 top 命令�
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD%EF%BC%9A"><span class="toc-text">软件下载：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85%EF%BC%9A"><span class="toc-text">节点订阅：</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD%EF%BC%9A"><span class="toc-text">软件下载：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85%EF%BC%9A"><span class="toc-text">节点订阅：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%87%E6%9C%9F%E6%97%B6%E9%97%B4%EF%BC%9A2021-1-16"><span class="toc-text">过期时间：2021-1-16</span></a></li></ol>
     </div>
   </section>
 
@@ -606,7 +612,6 @@ top 命令是 Linux 下最常用的系统监控命令。默认执行 top 命令�
 
 
 </aside>
-
 
 
         
@@ -874,6 +879,61 @@ var loadCSS = function( href, before, media, attributes ){
   
 
 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+    var clipboard = new ClipboardJS('.btn-copy', {
+        target: function (trigger) {
+            return trigger.nextElementSibling
+        }
+    });
+    function wait(callback, seconds) {
+        var timelag = null;
+        timelag = window.setTimeout(callback, seconds)
+    }
+    function pjax_initCopyCode() {
+		if($(".highlight .code pre").length+$(".article pre code").length==0)return;
+        var copyHtml = '';
+        copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+        copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
+        copyHtml += '</button>';
+        $(".highlight .code pre").before(copyHtml);
+        $(".article pre code").before(copyHtml);
+        clipboard.off('success').on('success', function (e) {
+            let $btn = $(e.trigger);
+            $btn.addClass('copied');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-check-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPIED';
+            wait(function () {
+                $icon.removeClass('fa-check-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        });
+        clipboard.off('error').on('error', function (e) {
+            e.clearSelection();
+            let $btn = $(e.trigger);
+            $btn.addClass('copy-failed');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-times-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPY FAILED';
+            wait(function () {
+                $icon.removeClass('fa-times-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        })
+    }
+    $(function () {
+        pjax_initCopyCode()
+    });
+</script>
 
 
 
@@ -1485,6 +1545,8 @@ document.addEventListener("pjax:success", listennSidebarTOC);
         
         
         
+          pjax_initCopyCode();
+        
         
           pjax_valine();
         
@@ -1506,5 +1568,6 @@ document.addEventListener("pjax:success", listennSidebarTOC);
 
     
   </div>
+
 </body>
 </html>
