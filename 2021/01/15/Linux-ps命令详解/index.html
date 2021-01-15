@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -21,9 +19,12 @@
 
   <!-- 页面元数据 -->
   
-  <title>标签：软件分享 - 小刚的博客</title>
+  <title>Linux ps命令详解 - 小刚的博客</title>
   
 
+  
+    <meta name="description" content="
+Linux中的ps命令是Process Status的缩写。ps命令用来列出系统中当前运行的那些进程。ps命令列出的是当前那些进程的快照，就是执行ps命令的那个时刻的那些进程，如果想要动态的显示进程信息，就可以使用top命令。要对进程进行监测和控制，首先必须要了解当前进程的情况，也就是需要查看当前进程，而 ps...">
   
 
   <!-- feed -->
@@ -307,7 +308,7 @@
     <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  focus' style="display: none;">
+        <div id="full" class='cover-wrapper post focus' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://7.dusays.com/2021/01/15/37ad7f9a21721.jpg"></div>
           
@@ -370,80 +371,265 @@
       <div class='body-wrapper' id="pjax-container">
         
 
-
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+    <div class='headimg-div'>
+      <a class='headimg-a'>
+        <img class='headimg' src='https://7.dusays.com/2021/01/15/0d028c6765d05.png'/>
+      </a>
+    </div>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title">
+        Linux ps命令详解
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/about/" rel="nofollow">
+    <img no-lazy src="">
+    <p>小刚</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/Linux/">Linux</a>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年1月15日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="Linux ps命令详解" data-path="/2021/01/15/Linux-ps%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+      </div>
+    
+  </div>
+
+
+  
+  <blockquote>
+<p>Linux中的ps命令是Process Status的缩写。ps命令用来列出系统中当前运行的那些进程。ps命令列出的是当前那些进程的快照，就是执行ps命令的那个时刻的那些进程，如果想要动态的显示进程信息，就可以使用top命令。要对进程进行监测和控制，首先必须要了解当前进程的情况，也就是需要查看当前进程，而 ps 命令就是最基本同时也是非常强大的进程查看命令。使用该命令可以确定有哪些进程正在运行和运行的状态、进程是否结束、进程有没有僵死、哪些进程占用了过多的资源等等。总之大部分信息都是可以通过执行该命令得到的。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps [参数]</span><br></pre></td></tr></table></figure>
+<h3 id="命令功能"><a href="#命令功能" class="headerlink" title="命令功能"></a>命令功能</h3><p>用来显示当前进程的状态</p>
+<h3 id="命令参数"><a href="#命令参数" class="headerlink" title="命令参数"></a>命令参数</h3><ul>
+<li>a 显示所有进程</li>
+<li>-a 显示同一终端下的所有程序</li>
+<li>-A 显示所有进程</li>
+<li>c 显示进程的真实名称</li>
+<li>-N 反向选择</li>
+<li>-e 等于“-A”</li>
+<li>e 显示环境变量</li>
+<li>f 显示程序间的关系</li>
+<li>-H 显示树状结构</li>
+<li>r 显示当前终端的进程</li>
+<li>T 显示当前终端的所有程序</li>
+<li>u 指定用户的所有进程</li>
+<li>-au 显示较详细的资讯</li>
+<li>-aux 显示所有包含其他使用者的行程</li>
+<li>-ef 显示所有进程信息，连同命令行</li>
+<li>-axjf列出类似程序树的程序显示</li>
+<li>-C&lt;命令&gt; 列出指定命令的状况</li>
+<li>–lines&lt;行数&gt; 每页显示的行数</li>
+<li>–width&lt;字符数&gt; 每页显示的字符数</li>
+<li>–help 显示帮助信息</li>
+<li>–version 显示版本显示<h3 id="常用实例"><a href="#常用实例" class="headerlink" title="常用实例"></a>常用实例</h3><h4 id="实例1：显示所有进程信息"><a href="#实例1：显示所有进程信息" class="headerlink" title="实例1：显示所有进程信息"></a>实例1：显示所有进程信息</h4>命令：<figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -<span class="keyword">A</span></span><br></pre></td></tr></table></figure>
+输出：<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">root</span>@linux:~# ps -A</span><br><span class="line"><span class="attribute">PID</span> TTY TIME CMD</span><br><span class="line"><span class="attribute">1</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">01</span> systemd</span><br><span class="line"><span class="attribute">2</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> kthreadd</span><br><span class="line"><span class="attribute">4</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> kworker/<span class="number">0</span>:<span class="number">0</span>H</span><br><span class="line"><span class="attribute">5</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> kworker/u<span class="number">2</span>:<span class="number">0</span></span><br><span class="line"><span class="attribute">6</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> mm_percpu_wq</span><br><span class="line"><span class="attribute">7</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">13</span> ksoftirqd/<span class="number">0</span></span><br><span class="line"><span class="attribute">8</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">46</span> rcu_sched</span><br><span class="line"><span class="attribute">9</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> rcu_bh</span><br><span class="line"><span class="attribute">10</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> migration/<span class="number">0</span></span><br><span class="line"><span class="attribute">11</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> watchdog/<span class="number">0</span></span><br><span class="line"><span class="attribute">12</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> cpuhp/<span class="number">0</span></span><br><span class="line"><span class="attribute">13</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> kdevtmpfs</span><br><span class="line"><span class="attribute">14</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> netns</span><br><span class="line"><span class="attribute">15</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> khungtaskd</span><br><span class="line"><span class="attribute">16</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> oom_reaper</span><br><span class="line"><span class="attribute">17</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> writeback</span><br><span class="line"><span class="attribute">18</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> kcompactd<span class="number">0</span></span><br><span class="line"><span class="attribute">19</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> ksmd</span><br><span class="line"><span class="attribute">20</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> khugepaged</span><br><span class="line"><span class="attribute">21</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> crypto</span><br><span class="line"><span class="attribute">23</span> ? <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> kintegrityd</span><br></pre></td></tr></table></figure>
+<h4 id="实例2：ps-与grep-常用组合用法，查找特定进程"><a href="#实例2：ps-与grep-常用组合用法，查找特定进程" class="headerlink" title="实例2：ps 与grep 常用组合用法，查找特定进程"></a>实例2：ps 与grep 常用组合用法，查找特定进程</h4>命令：<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ps</span> -ef|<span class="keyword">grep</span> ssh</span><br></pre></td></tr></table></figure>
+输出：<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">root</span>@Linux；:~# ps -ef|grep ssh</span><br><span class="line"><span class="attribute">root</span>      <span class="number">1562</span>     <span class="number">1</span>  <span class="number">0</span> Jan<span class="number">07</span> ?        <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> /usr/sbin/sshd -D</span><br><span class="line"><span class="attribute">root</span>     <span class="number">14501</span>  <span class="number">1562</span>  <span class="number">0</span> <span class="number">19</span>:<span class="number">36</span> ?        <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> sshd: root@pts/<span class="number">0</span></span><br><span class="line"><span class="attribute">root</span>     <span class="number">15969</span> <span class="number">14515</span>  <span class="number">0</span> <span class="number">19</span>:<span class="number">59</span> pts/<span class="number">0</span>    <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> grep ssh</span><br></pre></td></tr></table></figure>
+<h4 id="实例3：查看所有进程的内存占用情况，并从高到低排序"><a href="#实例3：查看所有进程的内存占用情况，并从高到低排序" class="headerlink" title="实例3：查看所有进程的内存占用情况，并从高到低排序"></a>实例3：查看所有进程的内存占用情况，并从高到低排序</h4>命令：<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -<span class="built_in">aux</span> --<span class="built_in">sort</span> -rss</span><br></pre></td></tr></table></figure>
+输出：<figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">root@linux:~<span class="comment"># ps -aux --sort -rss</span></span><br><span class="line">USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND</span><br><span class="line">www     <span class="number"> 14249 </span> 0.2  4.9<span class="number"> 163420 </span>50100 ?        S    19:32   0:03 php-fpm: pool www</span><br><span class="line">www     <span class="number"> 14248 </span> 0.2  4.8<span class="number"> 163028 </span>49388 ?        S    19:32   0:03 php-fpm: pool www</span><br><span class="line">www     <span class="number"> 26666 </span> 0.0  4.8<span class="number"> 164000 </span>49104 ?        S    Jan08   0:16 php-fpm: pool www</span><br><span class="line">www     <span class="number"> 26975 </span> 0.0  4.8<span class="number"> 164000 </span>48988 ?        S    Jan08   0:11 php-fpm: pool www</span><br><span class="line">www     <span class="number"> 26972 </span> 0.0  4.7<span class="number"> 163492 </span>48436 ?        S    Jan08   0:10 php-fpm: pool www</span><br><span class="line">www     <span class="number"> 25782 </span> 0.0  4.7<span class="number"> 165768 </span>47672 ?        S    Jan08   0:17 php-fpm: pool www</span><br><span class="line">www     <span class="number"> 14242 </span> 0.2  4.6<span class="number"> 162192 </span>47232 ?        S    19:32   0:03 php-fpm: pool www</span><br><span class="line">www     <span class="number"> 26976 </span> 0.0  4.6<span class="number"> 163700 </span>47184 ?        S    Jan08   0:12 php-fpm: pool www</span><br><span class="line">www     <span class="number"> 26665 </span> 0.0  4.6<span class="number"> 163768 </span>47088 ?        S    Jan08   0:13 php-fpm: pool www</span><br><span class="line">mysql   <span class="number"> 23609 </span> 0.0  4.5<span class="number"> 652312 </span>46192 ?        Sl   Jan08   0:21 /www/server/mysql/bin/mysqld --defaults-file=/etc/my.cnf --basedir=/ww</span><br><span class="line">root    <span class="number"> 28355 </span> 0.0  4.5<span class="number"> 268628 </span>46016 ?        Sl   Jan08   0:07 /www/server/panel/pyenv/bin/python /www/server/panel/BT-Panel</span><br><span class="line">www     <span class="number"> 26662 </span> 0.0  4.4<span class="number"> 163332 </span>44992 ?        S    Jan08   0:14 php-fpm: pool www</span><br><span class="line">&#123;1&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+  
   
     
+    <div class='footer'>
       
-  <section class="post-list">
+      
+      
+      
+    </div>
+  
+  
     
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-01-15T20:32:37+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年1月15日</p>
+  </a>
+</div>
+
+        
       
         
           
+
         
       
-    
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/2020/12/21/MAC%E5%B8%B8%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/">
-        <img class='headimg' src='https://7.dusays.com/2021/01/15/bd33930bfd42e.jpg'/>
-      </a>
-    </div>
-  
-  
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xiaogangei.github.io/2021/01/15/Linux-ps%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/&title=Linux ps命令详解 - 小刚的博客&summary=
+Linux中的ps命令是Process Status的缩写。ps命令用来列出系统中当前运行的那些进程。ps命令列出的是当前那些进程的快照，就是执行ps命令的那个时刻的那些进程，如果想要动态的显示进程信息，就可以使用top命令。要对进程进行监测和控制，首先必须要了解当前进程的情况，也就是需要查看当前进程，而 ps 命令就是最基本同时也是非常强大的进程查看命令。使用该命令可以确定有哪些进程正在运行和运行的状态、进程是否结束、进程有没有僵死、哪些进程占用了过多的资源等等。总之大部分信息都是可以通过执行该命令得到的。
+"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
     
-    <h2 class="article-title" >
-      <a href="/2020/12/21/MAC%E5%B8%B8%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/">
-        MAC常用的软件分享
-      </a>
-    </h2>
-  
-  <div class='md'>
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xiaogangei.github.io/2021/01/15/Linux-ps%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/&title=Linux ps命令详解 - 小刚的博客&summary=
+Linux中的ps命令是Process Status的缩写。ps命令用来列出系统中当前运行的那些进程。ps命令列出的是当前那些进程的快照，就是执行ps命令的那个时刻的那些进程，如果想要动态的显示进程信息，就可以使用top命令。要对进程进行监测和控制，首先必须要了解当前进程的情况，也就是需要查看当前进程，而 ps 命令就是最基本同时也是非常强大的进程查看命令。使用该命令可以确定有哪些进程正在运行和运行的状态、进程是否结束、进程有没有僵死、哪些进程占用了过多的资源等等。总之大部分信息都是可以通过执行该命令得到的。
+"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
     
-      <p>Mac 上常用的软件整理方便以后使用的时候下载</p>
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xiaogangei.github.io/2021/01/15/Linux-ps%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/&title=Linux ps命令详解 - 小刚的博客&summary=
+Linux中的ps命令是Process Status的缩写。ps命令用来列出系统中当前运行的那些进程。ps命令列出的是当前那些进程的快照，就是执行ps命令的那个时刻的那些进程，如果想要动态的显示进程信息，就可以使用top命令。要对进程进行监测和控制，首先必须要了解当前进程的情况，也就是需要查看当前进程，而 ps 命令就是最基本同时也是非常强大的进程查看命令。使用该命令可以确定有哪些进程正在运行和运行的状态、进程是否结束、进程有没有僵死、哪些进程占用了过多的资源等等。总之大部分信息都是可以通过执行该命令得到的。
+"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+    
+      
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+</div>
+
+
+
         
-        <time>2020-12-21</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Mac/">Mac</a>
-        
-      </div>
       
-        <div>
-          <a class='readmore' href='/2020/12/21/MAC%E5%B8%B8%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/'>
-            阅读全文
-          </a>
-        </div>
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2021/01/15/Linux%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Linux文件目录结构</p>
+          <p class='content'>
+在Linux文件系统中的每一个子目录都有特定的目的和用途。一般都是根据FHS标准定义一个正式的文件系统结构的，这个标准规定了哪些目录应该哪些作用。这里我们先介绍一些日常经常用到的目录
+
+
+
+
+...</p>
+        </a>
+      
+      
+        <a class='next' href='/2021/01/13/FQ%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/'>
+          <p class='title'>FQ软件下载<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>软件下载：
+            Mac下载
+Android下载
+Windows下载
+          
+
+Mac蓝奏云密码：491w
+REV2ray订阅链接：
+1https://www.r...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-    
-  
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -451,158 +637,22 @@
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://7.dusays.com/2021/01/15/ad42e45faee7b.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>小刚</h2>
-        
-        
-        
-          <p><span id="jinrishici-sentence">小刚的博客</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Android/" href="/categories/Android/"
-            id="categoriesAndroid"
-            ><div class='name'>Android</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/FQ/" href="/categories/FQ/"
-            id="categoriesFQ"
-            ><div class='name'>FQ</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Git/" href="/categories/Git/"
-            id="categoriesGit"
-            ><div class='name'>Git</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Linux/" href="/categories/Linux/"
-            id="categoriesLinux"
-            ><div class='name'>Linux</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Mac/" href="/categories/Mac/"
-            id="categoriesMac"
-            ><div class='name'>Mac</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Web/" href="/categories/Web/"
-            id="categoriesWeb"
-            ><div class='name'>Web</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
-            id="categoriesE695B0E68DAEE5BA93"
-            ><div class='name'>数据库</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%94%B5%E5%AD%90%E4%B9%A6/" href="/categories/%E7%94%B5%E5%AD%90%E4%B9%A6/"
-            id="categoriesE794B5E5AD90E4B9A6"
-            ><div class='name'>电子书</div><div class='badge'>(3)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%A0%BC%E5%BC%8F"><span class="toc-text">命令格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E5%8A%9F%E8%83%BD"><span class="toc-text">命令功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0"><span class="toc-text">命令参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%AE%9E%E4%BE%8B"><span class="toc-text">常用实例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B1%EF%BC%9A%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89%E8%BF%9B%E7%A8%8B%E4%BF%A1%E6%81%AF"><span class="toc-text">实例1：显示所有进程信息</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B2%EF%BC%9Aps-%E4%B8%8Egrep-%E5%B8%B8%E7%94%A8%E7%BB%84%E5%90%88%E7%94%A8%E6%B3%95%EF%BC%8C%E6%9F%A5%E6%89%BE%E7%89%B9%E5%AE%9A%E8%BF%9B%E7%A8%8B"><span class="toc-text">实例2：ps 与grep 常用组合用法，查找特定进程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B3%EF%BC%9A%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5%EF%BC%8C%E5%B9%B6%E4%BB%8E%E9%AB%98%E5%88%B0%E4%BD%8E%E6%8E%92%E5%BA%8F"><span class="toc-text">实例3：查看所有进程的内存占用情况，并从高到低排序</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/ADB/" style="font-size: 14px; color: #999">-ADB</a> <a href="/tags/Git/" style="font-size: 14px; color: #999">-Git</a> <a href="/tags/Mac-PHP/" style="font-size: 14px; color: #999">-Mac -PHP</a> <a href="/tags/Mysql/" style="font-size: 14px; color: #999">-Mysql</a> <a href="/tags/HTML/" style="font-size: 14px; color: #999">HTML</a> <a href="/tags/%E4%BB%A3%E7%A0%81/" style="font-size: 14px; color: #999">代码</a> <a href="/tags/%E6%8F%92%E4%BB%B6/" style="font-size: 14px; color: #999">插件</a> <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/" style="font-size: 14px; color: #999">软件分享</a>
-    </div>
-  </section>
-
-
-  
 
   
 
@@ -617,8 +667,8 @@
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="Linux ps命令详解";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
 
